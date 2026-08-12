@@ -1,0 +1,1353 @@
+<title>Gold Tracker India — should I buy gold today?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* ══════════════════════════════════════════════════════════════════
+   GOLD TRACKER INDIA
+   A committed single-world design: obsidian ground, struck-gold accent.
+   Every colour is painted explicitly so the page holds on any host.
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --ink0:#04060B; --ink1:#0A0F1A; --ink2:#111926; --ink3:#182333;
+  --line:rgba(255,255,255,.075); --line2:rgba(255,255,255,.15);
+  --txt:#EFF4FB; --txt2:#A7B6CB; --txt3:#71809A;
+
+  --gold:#F0C05A; --gold-hi:#FFEEBE; --gold-mid:#E0A93C; --gold-dp:#A8751A; --gold-ink:#3B2703;
+
+  --b1:#2FD9A2; --b1-bg:rgba(47,217,162,.13);
+  --b2:#AEDD3F; --b2-bg:rgba(174,221,63,.13);
+  --b3:#F5B841; --b3-bg:rgba(245,184,65,.14);
+  --b4:#FB8B3C; --b4-bg:rgba(251,139,60,.14);
+  --b5:#FF6B7F; --b5-bg:rgba(255,107,127,.14);
+  --acc:#7BB0F7; --acc-bg:rgba(123,176,247,.13);
+
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,"Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+  --glass:linear-gradient(165deg,rgba(255,255,255,.055),rgba(255,255,255,.012));
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink0);color:var(--txt);
+  font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ── ambient ground ─────────────────────────────────────────────── */
+.bgfx{position:fixed;inset:0;z-index:0;pointer-events:none}
+#dust{position:absolute;inset:0;width:100%;height:100%;display:block}
+.vig{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(880px 620px at 50% -8%, rgba(240,192,90,.20), transparent 66%),
+    radial-gradient(700px 520px at 88% 22%, rgba(168,117,26,.13), transparent 68%),
+    radial-gradient(760px 600px at 6% 42%, rgba(60,110,190,.10), transparent 70%);
+}
+.grain{
+  position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.045) .5px, transparent .5px);
+  background-size:3px 3px;
+}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 20px 90px}
+
+/* ── reveal ─────────────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ── hero ───────────────────────────────────────────────────────── */
+.hero{padding:64px 0 20px;text-align:center;position:relative}
+.kick{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:11px;font-weight:800;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--gold-hi);background:var(--glass);
+  border:1px solid rgba(240,192,90,.28);border-radius:999px;padding:9px 17px;
+  box-shadow:0 0 34px -10px rgba(240,192,90,.5), inset 0 1px 0 rgba(255,255,255,.09);
+  backdrop-filter:blur(8px);
+}
+.kick i{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:bl 2.6s ease-in-out infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.3}}
+
+h1{
+  font-size:clamp(38px,7.4vw,84px);line-height:.98;letter-spacing:-.045em;font-weight:800;
+  margin:26px 0 0;text-wrap:balance;
+}
+h1 .shine{
+  font-family:var(--serif);font-style:italic;font-weight:600;letter-spacing:-.02em;
+  background:linear-gradient(96deg,var(--gold-dp) 0%,var(--gold-hi) 24%,var(--gold) 48%,var(--gold-hi) 68%,var(--gold-mid) 100%);
+  background-size:280% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:sweep 7s ease-in-out infinite;
+}
+@keyframes sweep{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero p.lead{margin:24px auto 0;max-width:60ch;color:var(--txt2);font-size:clamp(15px,1.8vw,19px);text-wrap:pretty}
+
+.cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:36px}
+
+/* ── the gold bar button ────────────────────────────────────────── */
+.goldbar{
+  position:relative;border:0;cursor:pointer;overflow:hidden;isolation:isolate;
+  padding:17px 32px;border-radius:11px;font:inherit;font-weight:800;font-size:16px;
+  letter-spacing:-.01em;color:var(--gold-ink);text-decoration:none;display:inline-flex;
+  align-items:center;gap:10px;
+  background:linear-gradient(179deg,#FFF3D0 0%,#F8D688 15%,#EDBD57 44%,#D29A2C 74%,#B07C17 100%);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255,255,255,.92),
+    inset 0 -1px 0 rgba(120,80,10,.45),
+    inset 2px 0 0 rgba(255,255,255,.22), inset -2px 0 0 rgba(120,80,10,.22),
+    0 3px 0 #96660F, 0 7px 0 #6E4A0B,
+    0 16px 34px -12px rgba(240,192,90,.75);
+  transform:translateY(0);
+  transition:transform .13s cubic-bezier(.2,.7,.3,1), box-shadow .13s, filter .2s;
+}
+.goldbar::after{                       /* specular sweep */
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(103deg,transparent 32%,rgba(255,255,255,.85) 48%,transparent 62%);
+  transform:translateX(-130%);
+}
+.goldbar:hover{filter:brightness(1.06)}
+.goldbar:hover::after{transform:translateX(130%);transition:transform .85s cubic-bezier(.3,.6,.3,1)}
+.goldbar:active{
+  transform:translateY(5px);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(120,80,10,.45),
+    0 1px 0 #96660F, 0 2px 0 #6E4A0B, 0 8px 18px -10px rgba(240,192,90,.6);
+}
+.ghost{
+  padding:17px 28px;border-radius:11px;font:inherit;font-weight:750;font-size:15.5px;cursor:pointer;
+  color:var(--txt);background:var(--glass);border:1px solid var(--line2);
+  backdrop-filter:blur(8px);transition:background .2s,border-color .2s,transform .13s;
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+}
+.ghost:hover{border-color:rgba(240,192,90,.5);background:rgba(240,192,90,.09)}
+.ghost:active{transform:translateY(2px)}
+
+/* ══ CSS-3D gold ingot ═══════════════════════════════════════════
+   A true frustum: top face smaller than the bottom, four trapezoidal
+   walls clipped to join them. Dimensions are fixed in px because the
+   clip-path insets have to match the taper exactly.
+   bottom 240×140 · top 200×110 · height 46
+   ════════════════════════════════════════════════════════════════ */
+.barstage{
+  position:relative;perspective:1200px;perspective-origin:50% 46%;
+  height:334px;display:grid;place-items:center;margin-top:10px;
+}
+/* The camera tilt lives on .scene so it is shared by everything. Only the bar
+   spins — when the coins and light pool orbited too, the whole composition
+   swung off-centre through the cycle. */
+.scene{
+  position:relative;z-index:1;width:240px;height:46px;transform-style:preserve-3d;
+  transform:scale(1.3) rotateX(-24deg);
+}
+.turntable{
+  position:absolute;left:0;top:0;width:240px;height:46px;transform-style:preserve-3d;
+  display:block;border:0;background:none;padding:0;cursor:pointer;
+  animation:turn 24s linear infinite;
+}
+@keyframes turn{
+  0%  {transform:rotateY(-20deg) translateY(0)}
+  50% {transform:rotateY(160deg) translateY(-11px)}
+  100%{transform:rotateY(340deg) translateY(0)}
+}
+.turntable:hover{animation-play-state:paused}
+.turntable:focus-visible{outline:2px solid var(--gold);outline-offset:30px;border-radius:6px}
+.ing{position:absolute;left:0;top:0;width:240px;height:46px;transform-style:preserve-3d}
+.ing>*{position:absolute;backface-visibility:hidden}
+
+.f-top{
+  width:200px;height:110px;left:20px;top:-32px;
+  transform:translateY(-23px) rotateX(90deg);
+  background:
+    linear-gradient(114deg, rgba(255,255,255,.55) 4%, rgba(255,255,255,0) 26%),
+    linear-gradient(160deg,#FFEFC2 0%,#F0CE7C 26%,#E3B052 52%,#C9922B 78%,#B07C17 100%);
+  box-shadow:inset 0 0 0 1.5px rgba(255,247,222,.5), inset 0 0 34px rgba(120,80,10,.28);
+  border-radius:3px;
+}
+.f-bot{
+  width:240px;height:140px;left:0;top:-47px;
+  transform:translateY(23px) rotateX(-90deg);
+  background:linear-gradient(160deg,#6E4A0B,#3E2A05);
+}
+.f-front,.f-back{width:240px;height:48.4px;left:0;top:-1.2px;
+  clip-path:polygon(20px 0, 220px 0, 240px 100%, 0 100%)}
+.f-front{
+  transform:translateZ(62.5px) rotateX(18.06deg);
+  background:linear-gradient(178deg,#FFE9AE 0%,#E9BE63 22%,#D3A03A 58%,#A87718 100%);
+  box-shadow:inset 0 1px 0 rgba(255,248,225,.7);
+}
+.f-back{
+  transform:translateZ(-62.5px) rotateY(180deg) rotateX(18.06deg);
+  background:linear-gradient(178deg,#C69A34,#8A5F10);
+}
+.f-left,.f-right{width:140px;height:50.2px;left:50px;top:-2.1px;
+  clip-path:polygon(15px 0, 125px 0, 140px 100%, 0 100%)}
+.f-right{
+  transform:translateX(110px) rotateY(90deg) rotateX(23.5deg);
+  background:linear-gradient(178deg,#F2D289,#C4912A 46%,#946611);
+}
+.f-left{
+  transform:translateX(-110px) rotateY(-90deg) rotateX(23.5deg);
+  background:linear-gradient(178deg,#C99B33,#7E5710);
+}
+/* stamped markings on the top face */
+.stamp{
+  position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:1px;
+  color:rgba(96,63,6,.9);text-align:center;
+  text-shadow:0 1px 0 rgba(255,248,222,.75), 0 -1px 0 rgba(110,72,8,.35);
+}
+.stamp .m1{font-size:8.5px;font-weight:900;letter-spacing:.28em}
+.stamp .m2{font-size:27px;font-weight:900;letter-spacing:-.02em;line-height:1}
+.stamp .m3{font-size:8px;font-weight:800;letter-spacing:.22em}
+.stamp .rule{width:74px;height:1px;background:rgba(96,63,6,.4);margin:3px 0}
+.stamp .m4{font-size:7px;font-weight:700;letter-spacing:.14em;opacity:.75}
+
+/* Pool and contact shadow are plain 2D layers behind the scene: a blurred
+   element inside a preserve-3d context gets flattened and renders unreliably,
+   so these never appeared when they lived on the 3D ground plane. */
+.pool,.contact{position:absolute;left:50%;top:50%;pointer-events:none;z-index:0}
+.pool{
+  width:560px;height:160px;transform:translate(-50%,56px);
+  background:radial-gradient(ellipse at center, rgba(240,192,90,.34), rgba(240,192,90,.08) 44%, rgba(240,192,90,0) 72%);
+  filter:blur(16px);
+}
+.contact{
+  width:330px;height:74px;transform:translate(-50%,45px);
+  background:radial-gradient(ellipse at center, rgba(0,0,0,.82), rgba(0,0,0,0) 70%);
+  filter:blur(10px);
+}
+.lie{
+  position:absolute;left:50%;top:50%;width:70px;height:70px;margin:-35px 0 0 -35px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255,248,224,.9), rgba(255,248,224,0) 44%),
+    conic-gradient(from 200deg,#B8801C,#FFEEBE 14%,#E5AE3E 30%,#9C6C13 48%,#FFE7AE 66%,#D9A233 82%,#B8801C);
+  /* the outer shadow lies in the coin's own (ground) plane, so it reads as
+     contact rather than a drop shadow floating in screen space */
+  box-shadow:inset 0 0 0 3px rgba(255,242,205,.42), inset 0 0 16px rgba(90,58,4,.5),
+             0 0 20px 7px rgba(0,0,0,.55);
+}
+/* clear of the bar's footprint (half-width 120 + coin radius 35) so they never
+   intersect the silhouette as it turns */
+.lie1{transform:translate3d(-188px,22px,32px) rotateX(90deg)}
+.lie2{transform:translate3d(-166px,19px,-34px) rotateX(90deg) rotateZ(24deg)}
+.lie3{transform:translate3d(186px,22px,-4px) rotateX(90deg) rotateZ(-12deg)}
+@media (max-width:560px){
+  .barstage{height:250px}
+  .scene{transform:scale(.78) rotateX(-24deg)}
+  .pool{width:340px;transform:translate(-50%,36px)}
+  .contact{width:210px;transform:translate(-50%,29px)}
+}
+.barhint{
+  margin:2px auto 0;font-size:11.5px;color:var(--txt3);font-weight:650;
+  letter-spacing:.03em;text-align:center;
+}
+
+/* ── stat band ──────────────────────────────────────────────────── */
+.band{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:56px 0 0;
+  background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden;
+}
+/* No backdrop-filter here: compositing it over the fixed canvas left a visible
+   seam inside each cell. A solid ground is both cleaner and cheaper. */
+.band div{
+  background:#0B1220;padding:22px 16px;text-align:center;
+  border-top:1px solid rgba(240,192,90,.22);
+}
+.band .n{
+  font-family:var(--mono);font-size:clamp(20px,3.4vw,30px);font-weight:700;letter-spacing:-.05em;
+  background:linear-gradient(180deg,var(--gold-hi),var(--gold-mid));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.band .k{font-size:11.5px;color:var(--txt3);margin-top:5px;font-weight:650}
+/* three columns cannot hold these labels on a phone — they clipped. Stack to
+   rows with the figure and its label on one baseline. */
+@media (max-width:560px){
+  .band{grid-template-columns:1fr}
+  .band div{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:15px 18px;text-align:left}
+  .band .k{margin-top:0;text-align:right}
+}
+
+/* ── device ─────────────────────────────────────────────────────── */
+.stage{display:flex;justify-content:center;margin-top:64px;perspective:1500px}
+.device{
+  width:100%;max-width:418px;border-radius:34px;overflow:hidden;
+  display:flex;flex-direction:column;max-height:min(84vh,880px);
+  background:var(--ink1);border:1px solid var(--line2);
+  /* Re-anchor inherited colour to this element's own token set. Without it,
+     `body{color:var(--txt)}` resolves against :root and every plain text node
+     inside `.device.lite` inherits the dark theme's near-white onto white. */
+  color:var(--txt);
+  box-shadow:
+    0 0 0 1px rgba(240,192,90,.14),
+    0 50px 90px -40px rgba(0,0,0,.95),
+    0 0 120px -30px rgba(240,192,90,.30);
+  transform-style:preserve-3d;transition:transform .35s cubic-bezier(.2,.7,.3,1);
+}
+/* The device deliberately does NOT float forever: every control lives inside
+   it, and a perpetually moving target hurts tapping accuracy. Motion here is
+   user-driven (hover tilt) and settles. The decorative coin floats instead. */
+.coinstage{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+.chrome{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:15px 19px 13px;position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,.05),transparent);
+}
+/* a struck gold hairline instead of a plain border */
+.chrome::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(240,192,90,.55) 30%,rgba(255,238,190,.8) 50%,rgba(240,192,90,.55) 70%,transparent);
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14.5px;letter-spacing:-.015em}
+.mark{
+  width:27px;height:27px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(160deg,#FFEEBE,#E0A93C 55%,#A8751A);
+  color:var(--gold-ink);font-size:13px;font-weight:900;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 0 18px -4px rgba(240,192,90,.8);
+}
+.when{font-size:11px;color:var(--txt3);font-weight:650;text-align:right;line-height:1.35}
+.lite-btn{
+  border:1px solid var(--line2);background:transparent;color:var(--txt2);cursor:pointer;
+  width:29px;height:29px;border-radius:9px;font-size:13px;display:grid;place-items:center;padding:0;
+  transition:background .2s,color .2s;
+}
+.lite-btn:hover{background:rgba(255,255,255,.07);color:var(--gold)}
+
+.screen{overflow-y:auto;flex:1;padding-bottom:10px}
+.pane{animation:rise .34s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.blk{padding:22px 19px;border-top:1px solid var(--line)}
+.blk:first-child{border-top:0}
+.lbl{font-size:10.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--txt3);margin:0 0 14px}
+
+/* the answer — set like a certificate: serif verdict, gold small-caps label */
+.ask{
+  text-align:center;padding:26px 19px 8px;position:relative;
+  background:
+    radial-gradient(340px 180px at 50% -14%,var(--band-bg),transparent 72%);
+}
+.ask .q{
+  font-size:11px;color:var(--gold);font-weight:800;margin:0;
+  letter-spacing:.22em;text-transform:uppercase;
+}
+.ask .q::before,.ask .q::after{content:"—";color:color-mix(in srgb,var(--gold) 45%,transparent);margin:0 8px}
+.ask .a{
+  font-family:var(--serif);
+  font-size:clamp(33px,9.2vw,42px);line-height:1.04;letter-spacing:-.02em;font-weight:650;
+  margin:10px 0 0;color:var(--band);text-wrap:balance;
+  text-shadow:0 0 44px color-mix(in srgb,var(--band) 45%,transparent);
+}
+.ask .sub{margin:13px auto 0;max-width:31ch;color:var(--txt2);font-size:14.5px}
+.gauge{display:block;margin:6px auto 0;max-width:252px;width:100%;height:auto}
+.needle{transform-origin:120px 118px;transition:transform .8s cubic-bezier(.22,1.28,.35,1)}
+.gends{display:flex;justify-content:space-between;max-width:252px;margin:-8px auto 0;padding:0 6px}
+.gends span{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3)}
+.bandpill{
+  display:inline-flex;align-items:center;gap:8px;margin:2px auto 0;
+  background:var(--band-bg);color:var(--band);border:1px solid color-mix(in srgb,var(--band) 40%,transparent);
+  padding:8px 16px;border-radius:999px;font-size:13px;font-weight:800;
+  box-shadow:0 0 26px -8px color-mix(in srgb,var(--band) 70%,transparent);
+}
+.bandpill i{width:10px;height:10px;border-radius:50%;background:var(--band);flex:none;box-shadow:0 0 9px var(--band)}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:20px}
+.tile{border:1px solid var(--line);border-radius:17px;padding:15px;background:var(--glass)}
+.tile.hero{
+  background:linear-gradient(160deg,var(--band-bg),rgba(255,255,255,.015));
+  border-color:color-mix(in srgb,var(--band) 40%,transparent);
+  position:relative;overflow:hidden;
+}
+.tile.hero::after{               /* a quiet specular pass across the money tile */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.07) 50%,transparent 58%);
+}
+.tile .k{font-size:11.5px;font-weight:700;color:var(--txt3)}
+.tile .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700;font-size:23px;letter-spacing:-.05em;margin-top:5px}
+.tile.hero .v{color:var(--band)}
+.tile .g{font-size:11.5px;color:var(--txt3);margin-top:3px}
+
+.strip{display:flex;gap:8px;margin-top:13px}
+.chip{flex:1;background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:10px 6px;text-align:center}
+.chip .k{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3)}
+.chip .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;margin-top:4px;letter-spacing:-.035em}
+.chip .v.dn{color:var(--b5)}
+
+.meta{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px}
+.meta span{font-size:11.5px;color:var(--txt2);background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-weight:650}
+.meta .live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--b1);margin-right:6px;vertical-align:middle;box-shadow:0 0 8px var(--b1);animation:bl 2.4s ease-in-out infinite}
+
+/* scrubber */
+.scrub{background:var(--glass);border:1px solid var(--line);border-radius:19px;padding:16px 15px 14px}
+.scrub-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.scrub-top .t{font-size:13.5px;font-weight:750}
+.scrub-top .p{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700;font-size:15.5px;letter-spacing:-.04em;color:var(--band)}
+.scrub .say{font-size:13px;color:var(--txt2);min-height:40px;margin:7px 0 10px;line-height:1.45}
+.scrub .say b{color:var(--band)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:26px;background:transparent;cursor:grab;margin:0}
+input[type=range]:active{cursor:grabbing}
+input[type=range]::-webkit-slider-runnable-track{height:9px;border-radius:99px;background:linear-gradient(90deg,var(--b5),var(--b4) 26%,var(--b3) 50%,var(--b2) 74%,var(--b1))}
+input[type=range]::-moz-range-track{height:9px;border-radius:99px;background:linear-gradient(90deg,var(--b5),var(--b4) 26%,var(--b3) 50%,var(--b2) 74%,var(--b1))}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:25px;height:25px;border-radius:50%;margin-top:-8px;
+  background:linear-gradient(180deg,#FFF3D0,#E0A93C);border:2px solid #8F6210;
+  box-shadow:0 3px 10px rgba(0,0,0,.5), 0 0 18px -2px rgba(240,192,90,.9);
+}
+input[type=range]::-moz-range-thumb{
+  width:25px;height:25px;border-radius:50%;
+  background:linear-gradient(180deg,#FFF3D0,#E0A93C);border:2px solid #8F6210;
+  box-shadow:0 3px 10px rgba(0,0,0,.5), 0 0 18px -2px rgba(240,192,90,.9);
+}
+/* the green→red ramp means "don't buy → buy"; never use it where position
+   carries no such meaning, e.g. the amount slider. */
+input[type=range].plain::-webkit-slider-runnable-track{background:rgba(255,255,255,.11)}
+input[type=range].plain::-moz-range-track{background:rgba(255,255,255,.11)}
+.sends{display:flex;justify-content:space-between;font-size:10.5px;color:var(--txt3);font-weight:700}
+.reset{font:inherit;font-size:12px;font-weight:750;color:var(--gold);background:transparent;border:0;padding:8px 0 0;cursor:pointer}
+
+/* reasons */
+.reasons{display:flex;flex-direction:column;gap:8px}
+.rsn{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:var(--glass);transition:border-color .2s}
+.rsn[open]{border-color:var(--line2)}
+summary::-webkit-details-marker{display:none}
+.rsn summary{
+  display:grid;grid-template-columns:26px 1fr 16px;gap:11px;align-items:center;
+  padding:13px 14px;list-style:none;cursor:pointer;
+}
+.rsn summary:hover{background:rgba(255,255,255,.04)}
+.rsn .ic{width:26px;height:26px;border-radius:9px;display:grid;place-items:center;font-size:13px;font-weight:900}
+.rsn.pro .ic{background:var(--b1-bg);color:var(--b1)}
+.rsn.con .ic{background:var(--b4-bg);color:var(--b4)}
+.rsn .tx{font-size:14px;line-height:1.4;font-weight:650}
+.rsn .car{color:var(--txt3);font-size:10px;transition:transform .22s}
+.rsn[open] .car{transform:rotate(180deg)}
+.rsn .more{padding:0 14px 14px 51px;font-size:13px;color:var(--txt2);line-height:1.55;display:none}
+/* Specificity is load-bearing: `.rsn[open] .more` (0,2,1) would otherwise beat
+   the global `.detail-only` (0,1,0) and show both vocabularies at once. */
+.rsn[open] .more{display:block}
+.rsn .more.detail-only{display:none}
+body.detailed .rsn .more.simple-only{display:none}
+body.detailed .rsn[open] .more.detail-only{display:block}
+
+/* ladder */
+.prog{height:8px;border-radius:99px;background:rgba(255,255,255,.09);overflow:hidden;margin-bottom:16px}
+.prog i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--b1),var(--b2));box-shadow:0 0 14px -2px var(--b1);transition:width .55s cubic-bezier(.2,.7,.3,1)}
+.ladder{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.rung{display:grid;grid-template-columns:32px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:12px 14px;background:var(--glass);transition:border-color .2s,background .2s}
+.rung.done{background:var(--b1-bg);border-color:color-mix(in srgb,var(--b1) 40%,transparent)}
+.rung.ready{border-color:var(--b3);background:var(--b3-bg);box-shadow:0 0 22px -8px var(--b3)}
+.tick{width:32px;height:32px;border-radius:50%;border:2px solid var(--line2);background:transparent;cursor:pointer;display:grid;place-items:center;padding:0;color:transparent;font-size:14px;font-weight:900;transition:background .2s,border-color .2s,color .2s}
+.rung.done .tick{background:var(--b1);border-color:var(--b1);color:var(--ink0)}
+.rung.ready .tick{border-color:var(--b3)}
+.rung .t{display:block;font-size:13.5px;font-weight:750;line-height:1.3}
+.rung .s{display:block;font-size:11.5px;color:var(--txt3);margin-top:2px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.rung.done .t{color:var(--txt3);text-decoration:line-through}
+.amt{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;text-align:right;letter-spacing:-.04em}
+.amt small{display:block;font-family:var(--sans);font-size:10.5px;font-weight:700;color:var(--txt3);letter-spacing:0}
+.tag{display:inline-block;font-size:9.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;padding:2px 7px;border-radius:5px;background:var(--b3);color:var(--ink0);margin-left:7px;vertical-align:1px}
+
+.amount-display{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:34px;font-weight:700;letter-spacing:-.055em;text-align:center;line-height:1.1;background:linear-gradient(180deg,var(--gold-hi),var(--gold-mid));-webkit-background-clip:text;background-clip:text;color:transparent}
+.amount-sub{text-align:center;font-size:12.5px;color:var(--txt3);margin-top:4px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chips button{font:inherit;font-size:12.5px;font-weight:700;padding:11px 12px;border-radius:12px;cursor:pointer;background:var(--glass);border:1px solid var(--line);color:var(--txt2);transition:background .2s,color .2s,border-color .2s}
+.chips button:hover{border-color:var(--line2)}
+.chips button[aria-pressed="true"]{background:linear-gradient(180deg,#FFF3D0,#E0A93C);border-color:#B07C17;color:var(--gold-ink);box-shadow:0 0 20px -6px rgba(240,192,90,.8)}
+.note{font-size:12.5px;color:var(--txt3);margin:12px 0 0;line-height:1.55}
+
+/* `color:inherit` is load-bearing: opened as a bare file (no doctype) the page
+   runs in quirks mode, where tables do NOT inherit colour from their parent —
+   which left this table using the dark theme's text colour inside the light
+   device. Harmless in standards mode, essential outside it. */
+.rows{width:100%;border-collapse:collapse;font-size:13.5px;color:inherit}
+.rows th{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--txt3);text-align:left;padding:0 4px 9px;font-weight:800}
+.rows td{padding:11px 4px;border-top:1px solid var(--line)}
+.rows td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;font-weight:700;letter-spacing:-.03em}
+.rows tr.on td{color:var(--b1);font-weight:750}
+.rows tr.on td:first-child::before{content:"▸ "}
+.stat{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.stat:first-of-type{border-top:0}
+.stat .k{font-size:13.5px;color:var(--txt2)}
+.stat .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;letter-spacing:-.04em}
+.v.up{color:var(--b1)} .v.dn{color:var(--b5)}
+.callout{margin-top:15px;padding:16px;border-radius:17px;background:var(--b1-bg);border:1px solid color-mix(in srgb,var(--b1) 34%,transparent);font-size:13.5px;line-height:1.6}
+.callout b{color:var(--b1)}
+.hist{list-style:none;margin:0;padding:0}
+.hist li{display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--line);font-size:13.5px}
+.hist li:first-child{border-top:0}
+.hist .d{font-family:var(--mono);font-size:11.5px;color:var(--txt3)}
+.hist .r{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:700}
+
+.detail-only{display:none}
+body.detailed .detail-only{display:block}
+body.detailed .simple-only{display:none}
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar{display:grid;grid-template-columns:106px 1fr 30px;gap:10px;align-items:center;font-size:12px}
+.bar .track{height:8px;background:rgba(255,255,255,.09);border-radius:99px;overflow:hidden}
+.bar .fill{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold-mid),var(--gold-hi))}
+.bar .n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;color:var(--txt2);font-weight:700}
+.mono{font-family:var(--mono);font-size:11.5px;color:var(--txt3);line-height:1.85}
+.chartwrap{overflow-x:auto}
+
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);background:rgba(255,255,255,.028)}
+.tabs button{font:inherit;font-size:11px;font-weight:750;border:0;background:transparent;color:var(--txt3);padding:12px 4px 16px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;min-height:60px;position:relative;transition:color .2s}
+.tabs button[aria-selected="true"]{color:var(--gold)}
+.tabs button[aria-selected="true"]::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:36px;height:3px;border-radius:0 0 5px 5px;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+
+/* ── device light mode (proves the app is theme-aware) ──────────── */
+.device.lite{
+  --ink1:#FFFFFF;--ink2:#F4F7FC;--ink3:#E9EFF8;
+  --line:rgba(12,23,41,.10);--line2:rgba(12,23,41,.20);
+  --txt:#0C1729;--txt2:#43536C;--txt3:#5B6980;   /* txt3 darkened to clear 4.5:1 on white */
+  --glass:linear-gradient(165deg,rgba(12,23,41,.035),rgba(12,23,41,.012));
+  --b1:#0A7C55;--b1-bg:rgba(10,124,85,.11);      /* clears 4.5:1 as body text on white */
+  --b2:#5E9E11;--b2-bg:rgba(94,158,17,.13);
+  --b3:#C08207;--b3-bg:rgba(192,130,7,.13);
+  --b4:#D96B18;--b4-bg:rgba(217,107,24,.12);
+  --b5:#D33B4E;--b5-bg:rgba(211,59,78,.12);
+  background:var(--ink1);
+}
+.device.lite .rsn summary:hover{background:rgba(12,23,41,.04)}
+.device.lite .prog,.device.lite .bar .track{background:rgba(12,23,41,.09)}
+.device.lite input[type=range].plain::-webkit-slider-runnable-track{background:rgba(12,23,41,.10)}
+.device.lite input[type=range].plain::-moz-range-track{background:rgba(12,23,41,.10)}
+.device.lite .tabs{background:rgba(12,23,41,.03)}
+.device.lite .rung.done .tick,.device.lite .tag{color:#fff}
+.device.lite .chrome{background:linear-gradient(180deg,rgba(12,23,41,.04),transparent)}
+
+/* ── feature cards ──────────────────────────────────────────────── */
+.why{margin-top:96px}
+.why h2{font-size:clamp(26px,4.4vw,44px);letter-spacing:-.04em;font-weight:800;margin:0 0 10px;text-wrap:balance}
+.why>p{margin:0 0 34px;color:var(--txt2);max-width:60ch;font-size:17px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+.card{
+  position:relative;background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:26px;
+  backdrop-filter:blur(12px);overflow:hidden;transition:border-color .3s,transform .3s;
+}
+.card::before{
+  content:"";position:absolute;inset:0;border-radius:22px;padding:1px;
+  background:linear-gradient(150deg,rgba(240,192,90,.55),transparent 42%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .35s;pointer-events:none;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--line2)}
+.card:hover::before{opacity:1}
+.card .tg{display:inline-block;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);background:rgba(240,192,90,.11);border:1px solid rgba(240,192,90,.25);padding:5px 10px;border-radius:7px;margin-bottom:13px}
+.card h3{font-size:19px;margin:0 0 9px;font-weight:750;letter-spacing:-.022em}
+.card p{margin:0;color:var(--txt2);font-size:15px;line-height:1.6}
+.card p+p{margin-top:10px}
+.sws{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.sw{display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:650;color:var(--txt2);border:1px solid var(--line);border-radius:10px;padding:7px 11px;background:rgba(255,255,255,.03)}
+.sw i{width:12px;height:12px;border-radius:4px;display:block}
+footer.pg{margin-top:64px;padding-top:26px;border-top:1px solid var(--line);font-size:12.5px;color:var(--txt3);max-width:76ch;line-height:1.7}
+
+.tools{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin-top:30px}
+.seg{display:inline-flex;background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:4px;gap:3px;backdrop-filter:blur(8px)}
+.seg button{font:inherit;font-size:13px;font-weight:750;border:0;background:transparent;color:var(--txt2);padding:9px 18px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:linear-gradient(180deg,#FFF3D0,#E0A93C);color:var(--gold-ink);box-shadow:0 0 22px -8px rgba(240,192,90,.9)}
+.warn{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:750;color:var(--b4);background:var(--b4-bg);border:1px solid color-mix(in srgb,var(--b4) 34%,transparent);padding:9px 15px;border-radius:999px}
+.warn.live{color:var(--b1);background:var(--b1-bg);border-color:color-mix(in srgb,var(--b1) 34%,transparent)}
+
+/* asset switcher inside the device */
+.assetseg{display:flex;gap:6px;padding:12px 16px 0}
+.assetseg button{
+  flex:1;font:inherit;font-size:12.5px;font-weight:800;letter-spacing:.02em;cursor:pointer;
+  padding:9px 10px;border-radius:11px;border:1px solid var(--line);
+  background:var(--glass);color:var(--txt2);transition:background .18s,color .18s,border-color .18s;
+}
+.assetseg button[aria-pressed="true"]{
+  background:linear-gradient(180deg,#FFF3D0,#E0A93C);border-color:#B07C17;color:var(--gold-ink);
+}
+.assetseg button.ag[aria-pressed="true"]{
+  background:linear-gradient(180deg,#F4F7FB,#B9C4D4);border-color:#8B99AD;color:#1C2735;
+}
+.srcnote{font-size:11px;color:var(--txt3);line-height:1.6;padding:14px 19px 6px;border-top:1px solid var(--line)}
+</style>
+
+<div class="bgfx"><canvas id="dust"></canvas><div class="vig"></div><div class="grain"></div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <span class="kick rv"><i></i>Gold Tracker India</span>
+    <h1 class="rv">Should I buy gold today?<br><span class="shine">Get a straight answer.</span></h1>
+    <p class="lead rv">Most gold apps show you a price and leave you to guess. This one answers the actual question — in rupees, in plain words, with the reasoning shown. Drag the price and watch the answer change.</p>
+
+    <div class="barstage rv">
+      <div class="scene">
+        <span class="pool" aria-hidden="true"></span>
+        <span class="contact" aria-hidden="true"></span>
+        <span class="lie lie1" aria-hidden="true"></span>
+        <span class="lie lie2" aria-hidden="true"></span>
+        <span class="lie lie3" aria-hidden="true"></span>
+        <a class="turntable" href="#app" aria-label="See today's answer">
+        <span class="ing" aria-hidden="true">
+          <span class="f-bot"></span>
+          <span class="f-back"></span>
+          <span class="f-left"></span>
+          <span class="f-right"></span>
+          <span class="f-front"></span>
+          <span class="f-top">
+            <span class="stamp">
+              <span class="m1">GOLD INDIA</span>
+              <span class="m2">999.9</span>
+              <span class="m3">FINE GOLD</span>
+              <span class="rule"></span>
+              <span class="m4">10 g · ASSAYED</span>
+            </span>
+          </span>
+        </span>
+        </a>
+      </div>
+    </div>
+    <p class="barhint rv">Tap the bar for today's answer</p>
+
+    <div class="cta rv">
+      <a class="goldbar" href="#app">See today's answer</a>
+      <a class="ghost" href="#why">Why it's built this way</a>
+    </div>
+
+    <div class="band rv" id="statBand">
+      <div><div class="n" id="statGold">₹1,52,400</div><div class="k">gold per 10g today</div></div>
+      <div><div class="n" id="statSilver">—</div><div class="k">silver per kg today</div></div>
+      <div><div class="n" id="statMeta">5 steps</div><div class="k" id="statMetaK">your buying plan</div></div>
+    </div>
+
+    <div class="tools rv">
+      <div class="seg" role="group" aria-label="Detail level">
+        <button id="btnSimple" aria-pressed="true">Simple</button>
+        <button id="btnDetail" aria-pressed="false">Show the numbers</button>
+      </div>
+      <span class="warn" id="dataChip">◆ Sample data — not live prices</span>
+    </div>
+  </header>
+
+  <div class="stage rv" id="app">
+    <div class="device" id="device">
+      <div class="chrome">
+        <span class="brand"><span class="mark">₹</span>Gold India</span>
+        <span class="when"><span id="chromeDate">Sunday, 9 Aug</span><br><span id="modeLabel">Long-term view</span></span>
+        <button class="lite-btn" id="liteBtn" aria-pressed="false" aria-label="Switch the app to light mode">☀</button>
+      </div>
+      <div class="screen" id="screen"></div>
+      <nav class="tabs" role="tablist" aria-label="Main">
+        <button role="tab" aria-selected="true" data-tab="today">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5l3.2 2"/></svg>Today</button>
+        <button role="tab" aria-selected="false" data-tab="plan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h4V14H4zM10 19.5h4V9h-4zM16 19.5h4V4.5h-4z"/></svg>My Plan</button>
+        <button role="tab" aria-selected="false" data-tab="record">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 17l5-5 3.5 3.5L20 8"/><path d="M15 8h5v5"/></svg>Track Record</button>
+      </nav>
+    </div>
+  </div>
+
+  <section class="why" id="why">
+    <h2 class="rv">What changed, and why it works</h2>
+    <p class="rv">Each of these answers something specific in the master plan. The full write-up is in <code>docs/UX_DESIGN_TRACKING_PLAN.md</code>.</p>
+    <div class="grid">
+      <div class="card rv"><span class="tg">The big one · replaces §53</span>
+        <h3>Ask the question, then answer it</h3>
+        <p>The plan's headline output was “Gold Score: 72/100.” Nobody wants that. The screen now prints the question a person actually has — <em>Should I buy gold today?</em> — and answers it in four words: <strong>Yes — but only part.</strong></p>
+        <p>The score still runs the engine and is still stored for accountability. It just stops being the headline.</p></div>
+      <div class="card rv"><span class="tg">New idea</span>
+        <h3>The price slider answers “then when?”</h3>
+        <p>Every buy/wait app has the same hole: it tells you to wait, and you have no idea what you're waiting <em>for</em>. Drag the slider and the answer, gauge and money recompute live — so you can see that at ₹1,44,750 this becomes a clear buy.</p>
+        <p>It makes the model inspectable without a single technical word.</p></div>
+      <div class="card rv"><span class="tg">Comprehension</span>
+        <h3>A gauge everyone can already read</h3>
+        <p>A speedometer needs no legend. Five zones, a needle, and the verdict in words — readable in about a second by someone who has never invested.</p>
+        <p>Colour is never the only channel: every state also carries a word, a position on the arc and a shape, so it survives colour-blindness and greyscale.</p></div>
+      <div class="card rv"><span class="tg">Experience · promotes §23</span>
+        <h3>The ladder does the hard part</h3>
+        <p>Staged buying was buried at §23. As the spine of the app it removes the impossible task — you're never asked to time the market, only to tick a box when told.</p>
+        <p>It also absorbs a wrong call: if today's verdict is off, only 30% of the money is committed.</p></div>
+      <div class="card rv"><span class="tg">Design · fixes §52</span>
+        <h3>Gold as identity, colour as meaning</h3>
+        <p>The plan used orange for both “press this” and “worry about this”. Now gold is the brand, and a green→amber→red ramp owns status — the ordering people already expect, so there's nothing to learn.</p>
+        <div class="sws">
+          <span class="sw"><i style="background:linear-gradient(135deg,#FFEEBE,#E0A93C)"></i>Gold · brand</span>
+          <span class="sw"><i style="background:#2FD9A2"></i>Green · buy</span>
+          <span class="sw"><i style="background:#F5B841"></i>Amber · wait</span>
+          <span class="sw"><i style="background:#FF6B7F"></i>Red · don't</span>
+        </div></div>
+      <div class="card rv"><span class="tg">Tracking · fixes §36</span>
+        <h3>The price you actually pay</h3>
+        <p>Costs appeared only inside backtesting — yet the same ₹50,000 buys about 3.25g as an ETF and about 2.84g as jewellery. A 12% making charge dwarfs any timing edge the model could earn.</p>
+        <p>Switch the buying route on <em>My Plan</em> and watch every figure move.</p></div>
+    </div>
+  </section>
+
+  <footer class="pg">
+    Every figure here is a worked example used to specify layout and copy — not a live price, and not a forecast. This describes a decision-support tool, not investment advice. Gold prices can fall. Any public release needs review against Indian regulatory requirements, as the master plan notes at §58.
+  </footer>
+</div>
+
+<script id="live-data" type="application/json">{"generated_at":"2026-08-11T14:18:02.676Z","sources":{"spot":"api.gold-api.com","fx":"open.er-api.com","history":"Yahoo Finance (daily closes)","etf_nav":"AMFI NAVAll.txt"},"india_costs":{"as_of":"2026-08","import_duty":0.06,"gst":0.03,"note":"Estimated landed retail price = international price × (1 + import duty) × (1 + GST). Local dealer premium/discount not included."},"weights":{"valuation":0.35,"drawdown":0.25,"trend":0.2,"rsi":0.1,"fx":0.1},"usd_inr":95.37,"assets":{"gold":{"key":"gold","unit_grams":10,"intl_inr":134539,"landed_inr_est":146890,"intl_inr_month_ago":123750,"spot_usd_ozt":4388,"spot_at":"2026-08-11T14:17:36Z","stats":{"sma50":127901,"sma200":133384,"rsi14":66.2,"high52w":156021,"low52w":93508,"fx_change_20d":-0.0091,"off_high_pct":-13.8},"components":{"valuation":48,"drawdown":90,"trend":55,"rsi":40,"fx":40},"score":58,"band":3,"history":[{"d":"2026-02-04","v":143044},{"d":"2026-02-05","v":140863},{"d":"2026-02-06","v":143767},{"d":"2026-02-09","v":147106},{"d":"2026-02-10","v":146112},{"d":"2026-02-11","v":147709},{"d":"2026-02-12","v":143635},{"d":"2026-02-13","v":146226},{"d":"2026-02-17","v":142519},{"d":"2026-02-18","v":145292},{"d":"2026-02-19","v":145250},{"d":"2026-02-20","v":148088},{"d":"2026-02-23","v":151817},{"d":"2026-02-24","v":150877},{"d":"2026-02-25","v":152187},{"d":"2026-02-26","v":151368},{"d":"2026-02-27","v":153042},{"d":"2026-03-02","v":155035},{"d":"2026-03-03","v":150353},{"d":"2026-03-04","v":151463},{"d":"2026-03-05","v":150025},{"d":"2026-03-06","v":151862},{"d":"2026-03-09","v":150495},{"d":"2026-03-10","v":153377},{"d":"2026-03-11","v":153119},{"d":"2026-03-12","v":151695},{"d":"2026-03-13","v":150080},{"d":"2026-03-16","v":148621},{"d":"2026-03-17","v":148378},{"d":"2026-03-18","v":145252},{"d":"2026-03-19","v":137927},{"d":"2026-03-20","v":136777},{"d":"2026-03-23","v":132951},{"d":"2026-03-24","v":131885},{"d":"2026-03-25","v":137941},{"d":"2026-03-26","v":133211},{"d":"2026-03-27","v":136203},{"d":"2026-03-30","v":137301},{"d":"2026-03-31","v":139688},{"d":"2026-04-01","v":142469},{"d":"2026-04-02","v":139041},{"d":"2026-04-06","v":138965},{"d":"2026-04-07","v":139039},{"d":"2026-04-08","v":140904},{"d":"2026-04-09","v":142471},{"d":"2026-04-10","v":141570},{"d":"2026-04-13","v":144767},{"d":"2026-04-14","v":144525},{"d":"2026-04-15","v":144118},{"d":"2026-04-16","v":143158},{"d":"2026-04-17","v":145318},{"d":"2026-04-20","v":143909},{"d":"2026-04-21","v":141424},{"d":"2026-04-22","v":142721},{"d":"2026-04-23","v":142367},{"d":"2026-04-24","v":142887},{"d":"2026-04-27","v":141687},{"d":"2026-04-28","v":139716},{"d":"2026-04-29","v":138703},{"d":"2026-04-30","v":140590},{"d":"2026-05-01","v":141053},{"d":"2026-05-04","v":138417},{"d":"2026-05-05","v":139417},{"d":"2026-05-06","v":142410},{"d":"2026-05-07","v":142418},{"d":"2026-05-08","v":143042},{"d":"2026-05-11","v":144718},{"d":"2026-05-12","v":143821},{"d":"2026-05-13","v":144534},{"d":"2026-05-14","v":143952},{"d":"2026-05-15","v":140189},{"d":"2026-05-18","v":140907},{"d":"2026-05-19","v":139905},{"d":"2026-05-20","v":140627},{"d":"2026-05-21","v":140373},{"d":"2026-05-22","v":139792},{"d":"2026-05-26","v":138766},{"d":"2026-05-27","v":137341},{"d":"2026-05-28","v":138939},{"d":"2026-05-29","v":140829},{"d":"2026-06-01","v":137480},{"d":"2026-06-02","v":137491},{"d":"2026-06-03","v":137172},{"d":"2026-06-04","v":137843},{"d":"2026-06-05","v":133571},{"d":"2026-06-08","v":133392},{"d":"2026-06-09","v":130608},{"d":"2026-06-10","v":126329},{"d":"2026-06-11","v":125930},{"d":"2026-06-12","v":129770},{"d":"2026-06-15","v":131832},{"d":"2026-06-16","v":132124},{"d":"2026-06-17","v":132937},{"d":"2026-06-18","v":128121},{"d":"2026-06-22","v":127326},{"d":"2026-06-23","v":126384},{"d":"2026-06-24","v":121159},{"d":"2026-06-25","v":122327},{"d":"2026-06-26","v":123790},{"d":"2026-06-29","v":122583},{"d":"2026-06-30","v":122766},{"d":"2026-07-01","v":124805},{"d":"2026-07-02","v":126312},{"d":"2026-07-06","v":127716},{"d":"2026-07-07","v":127402},{"d":"2026-07-08","v":125466},{"d":"2026-07-09","v":126680},{"d":"2026-07-10","v":125867},{"d":"2026-07-13","v":123750},{"d":"2026-07-14","v":125900},{"d":"2026-07-15","v":125465},{"d":"2026-07-16","v":123850},{"d":"2026-07-17","v":124692},{"d":"2026-07-20","v":124408},{"d":"2026-07-21","v":126100},{"d":"2026-07-22","v":128736},{"d":"2026-07-23","v":126038},{"d":"2026-07-24","v":126692},{"d":"2026-07-27","v":125462},{"d":"2026-07-28","v":124058},{"d":"2026-07-29","v":124178},{"d":"2026-07-30","v":126133},{"d":"2026-07-31","v":124564},{"d":"2026-08-03","v":123632},{"d":"2026-08-04","v":125215},{"d":"2026-08-05","v":129786},{"d":"2026-08-06","v":129990},{"d":"2026-08-07","v":133014},{"d":"2026-08-10","v":133661},{"d":"2026-08-11","v":136341}]},"silver":{"key":"silver","unit_grams":1000,"intl_inr":199552,"landed_inr_est":217871,"intl_inr_month_ago":178440,"spot_usd_ozt":65.084,"spot_at":"2026-08-11T14:17:35Z","stats":{"sma50":191593,"sma200":209433,"rsi14":62.1,"high52w":332874,"low52w":105487,"fx_change_20d":-0.0091,"off_high_pct":-40.1},"components":{"valuation":62,"drawdown":95,"trend":40,"rsi":40,"fx":40},"score":61,"band":3,"history":[{"d":"2026-02-04","v":244681},{"d":"2026-02-05","v":221749},{"d":"2026-02-06","v":222815},{"d":"2026-02-09","v":239012},{"d":"2026-02-10","v":234238},{"d":"2026-02-11","v":243931},{"d":"2026-02-12","v":220384},{"d":"2026-02-13","v":226679},{"d":"2026-02-17","v":214373},{"d":"2026-02-18","v":225838},{"d":"2026-02-19","v":226418},{"d":"2026-02-20","v":240846},{"d":"2026-02-23","v":252381},{"d":"2026-02-24","v":255931},{"d":"2026-02-25","v":265822},{"d":"2026-02-26","v":254395},{"d":"2026-02-27","v":271183},{"d":"2026-03-02","v":258520},{"d":"2026-03-03","v":244111},{"d":"2026-03-04","v":244440},{"d":"2026-03-05","v":241942},{"d":"2026-03-06","v":247342},{"d":"2026-03-09","v":248383},{"d":"2026-03-10","v":261264},{"d":"2026-03-11","v":252063},{"d":"2026-03-12","v":251066},{"d":"2026-03-13","v":240347},{"d":"2026-03-16","v":238862},{"d":"2026-03-17","v":235962},{"d":"2026-03-18","v":229432},{"d":"2026-03-19","v":212560},{"d":"2026-03-20","v":207571},{"d":"2026-03-23","v":208445},{"d":"2026-03-24","v":207673},{"d":"2026-03-25","v":219384},{"d":"2026-03-26","v":206023},{"d":"2026-03-27","v":210869},{"d":"2026-03-30","v":213336},{"d":"2026-03-31","v":224488},{"d":"2026-04-01","v":225972},{"d":"2026-04-02","v":217417},{"d":"2026-04-06","v":216829},{"d":"2026-04-07","v":214438},{"d":"2026-04-08","v":223167},{"d":"2026-04-09","v":226769},{"d":"2026-04-10","v":226909},{"d":"2026-04-13","v":230542},{"d":"2026-04-14","v":237803},{"d":"2026-04-15","v":238668},{"d":"2026-04-16","v":235155},{"d":"2026-04-17","v":244524},{"d":"2026-04-20","v":239373},{"d":"2026-04-21","v":230000},{"d":"2026-04-22","v":234906},{"d":"2026-04-23","v":228342},{"d":"2026-04-24","v":231120},{"d":"2026-04-27","v":227295},{"d":"2026-04-28","v":222757},{"d":"2026-04-29","v":218403},{"d":"2026-04-30","v":224027},{"d":"2026-05-01","v":231390},{"d":"2026-05-04","v":223795},{"d":"2026-05-05","v":223725},{"d":"2026-05-06","v":233637},{"d":"2026-05-07","v":241518},{"d":"2026-05-08","v":243621},{"d":"2026-05-11","v":262174},{"d":"2026-05-12","v":261747},{"d":"2026-05-13","v":273481},{"d":"2026-05-14","v":261287},{"d":"2026-05-15","v":237436},{"d":"2026-05-18","v":238553},{"d":"2026-05-19","v":232316},{"d":"2026-05-20","v":235400},{"d":"2026-05-21","v":236277},{"d":"2026-05-22","v":234666},{"d":"2026-05-26","v":235280},{"d":"2026-05-27","v":230365},{"d":"2026-05-28","v":233593},{"d":"2026-05-29","v":233504},{"d":"2026-06-01","v":230425},{"d":"2026-06-02","v":230661},{"d":"2026-06-03","v":227170},{"d":"2026-06-04","v":227219},{"d":"2026-06-05","v":212326},{"d":"2026-06-08","v":210506},{"d":"2026-06-09","v":199572},{"d":"2026-06-10","v":198645},{"d":"2026-06-11","v":196686},{"d":"2026-06-12","v":208921},{"d":"2026-06-15","v":213422},{"d":"2026-06-16","v":213244},{"d":"2026-06-17","v":215608},{"d":"2026-06-18","v":200958},{"d":"2026-06-22","v":199510},{"d":"2026-06-23","v":189795},{"d":"2026-06-24","v":176266},{"d":"2026-06-25","v":177089},{"d":"2026-06-26","v":179726},{"d":"2026-06-29","v":177293},{"d":"2026-06-30","v":181505},{"d":"2026-07-01","v":184325},{"d":"2026-07-02","v":186251},{"d":"2026-07-06","v":190325},{"d":"2026-07-07","v":187265},{"d":"2026-07-08","v":179263},{"d":"2026-07-09","v":185171},{"d":"2026-07-10","v":183426},{"d":"2026-07-13","v":178440},{"d":"2026-07-14","v":182202},{"d":"2026-07-15","v":177184},{"d":"2026-07-16","v":173700},{"d":"2026-07-17","v":174135},{"d":"2026-07-20","v":176212},{"d":"2026-07-21","v":182237},{"d":"2026-07-22","v":186322},{"d":"2026-07-23","v":180021},{"d":"2026-07-24","v":182694},{"d":"2026-07-27","v":180048},{"d":"2026-07-28","v":176103},{"d":"2026-07-29","v":178088},{"d":"2026-07-30","v":180935},{"d":"2026-07-31","v":177169},{"d":"2026-08-03","v":176748},{"d":"2026-08-04","v":183618},{"d":"2026-08-05","v":189825},{"d":"2026-08-06","v":188271},{"d":"2026-08-07","v":194071},{"d":"2026-08-10","v":199507},{"d":"2026-08-11","v":199588}]}},"etfs":{"gold":[{"name":"SBI Gold ETF","nav":127.4938,"date":"10-Aug-2026","metal":"gold"},{"name":"HDFC Gold ETF - Growth Option","nav":127.7418,"date":"10-Aug-2026","metal":"gold"},{"name":"ICICI Prudential Gold ETF","nav":128.0438,"date":"10-Aug-2026","metal":"gold"},{"name":"KOTAK GOLD ETF","nav":124.7984,"date":"10-Aug-2026","metal":"gold"},{"name":"Axis Gold ETF","nav":124.5845,"date":"10-Aug-2026","metal":"gold"},{"name":"Mirae Asset Gold ETF","nav":145.3552,"date":"10-Aug-2026","metal":"gold"}],"silver":[{"name":"Nippon India Silver ETF","nav":220.2396,"date":"10-Aug-2026","metal":"silver"},{"name":"SBI Silver ETF","nav":225.6366,"date":"10-Aug-2026","metal":"silver"},{"name":"HDFC Silver ETF - Growth Option","nav":220.2684,"date":"10-Aug-2026","metal":"silver"},{"name":"ICICI PRUDENTIAL SILVER ETF","nav":229.9058,"date":"10-Aug-2026","metal":"silver"}]}}</script>
+<script>
+/* ═════════ ambient gold: soft bokeh + fine dust ═════════
+   Earlier revision drew crisp, fully-lit coins here. At this scale they read
+   as clip-art stuck on the background rather than depth, so they are now
+   heavily out-of-focus and low-contrast — atmosphere, not illustration. */
+(function(){
+  const cv = document.getElementById("dust"), ctx = cv.getContext("2d");
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W=0,H=0,dpr=1,coins=[],dust=[],raf=null;
+
+  function seed(){
+    const area = W*H/1000000;
+    coins = Array.from({length: Math.round(Math.min(11, 5+area*3))}, () => ({
+      x:Math.random()*W, y:Math.random()*H,
+      r:26+Math.random()*54, z:.30+Math.random()*.70,
+      a:Math.random()*Math.PI*2, sp:(Math.random()-.5)*.008,
+      vy:-(.05+Math.random()*.14), vx:(Math.random()-.5)*.07, tilt:(Math.random()-.5)*.9
+    }));
+    dust = Array.from({length: Math.round(Math.min(90, 38+area*34))}, () => ({
+      x:Math.random()*W, y:Math.random()*H,
+      r:.35+Math.random()*1.15, z:.3+Math.random()*.7,
+      vy:-(.05+Math.random()*.2), vx:(Math.random()-.5)*.09, ph:Math.random()*Math.PI*2
+    }));
+  }
+  function size(){
+    dpr = Math.min(devicePixelRatio||1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W*dpr; cv.height = H*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    seed();
+  }
+
+  /* An out-of-focus disc: bright, soft-edged core with a slightly hotter rim,
+     the way a real bokeh highlight falls. Never a hard outline. */
+  function coinShape(c){
+    const ry = Math.max(c.r*.16, c.r*Math.abs(Math.cos(c.a)));
+    ctx.save();
+    ctx.translate(c.x, c.y); ctx.rotate(c.tilt); ctx.scale(1, ry/c.r);
+    const a = (.030 + c.z*.085) * (c.z*c.z);        // far discs fade away fast
+    const g = ctx.createRadialGradient(0,0,c.r*.1, 0,0,c.r);
+    g.addColorStop(0,   "rgba(255,232,176,"+(a*.85).toFixed(4)+")");
+    g.addColorStop(.62, "rgba(240,196,104,"+(a*.72).toFixed(4)+")");
+    g.addColorStop(.88, "rgba(226,176,74,"+a.toFixed(4)+")");
+    g.addColorStop(1,   "rgba(226,176,74,0)");
+    ctx.beginPath(); ctx.arc(0,0,c.r,0,Math.PI*2);
+    ctx.fillStyle = g; ctx.fill();
+    ctx.restore();
+  }
+
+  function frame(){
+    ctx.clearRect(0,0,W,H);
+    ctx.globalCompositeOperation = "lighter";
+    for(const d of dust){
+      d.ph += .02;
+      const a = (.12 + d.z*.42) * (.55 + .45*Math.sin(d.ph));
+      ctx.globalAlpha = a;
+      ctx.beginPath(); ctx.arc(d.x, d.y, d.r*(.6+d.z), 0, Math.PI*2);
+      ctx.fillStyle = "#FFD98A"; ctx.fill();
+      if(!still){ d.y += d.vy*(.4+d.z); d.x += d.vx; }
+      if(d.y < -8){ d.y = H+8; d.x = Math.random()*W; }
+      if(d.x < -8) d.x = W+8; else if(d.x > W+8) d.x = -8;
+    }
+    ctx.globalCompositeOperation = "source-over";
+    for(const c of coins){
+      coinShape(c);
+      if(!still){ c.a += c.sp; c.y += c.vy*(.45+c.z); c.x += c.vx; }
+      if(c.y < -60){ c.y = H+60; c.x = Math.random()*W; }
+      if(c.x < -60) c.x = W+60; else if(c.x > W+60) c.x = -60;
+    }
+    ctx.globalAlpha = 1;
+    if(!still) raf = requestAnimationFrame(frame);
+  }
+
+  addEventListener("resize", ()=>{ size(); if(still) frame(); }, {passive:true});
+  size(); frame();
+  document.addEventListener("visibilitychange", ()=>{
+    if(document.hidden){ cancelAnimationFrame(raf); raf=null; }
+    else if(!raf && !still){ raf = requestAnimationFrame(frame); }
+  });
+})();
+
+/* ═════════ scroll reveal ═════════ */
+(function(){
+  const els = document.querySelectorAll(".rv");
+  if(!("IntersectionObserver" in window)){ els.forEach(e=>e.classList.add("in")); return; }
+  const io = new IntersectionObserver((es)=>es.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+  }), {threshold:.14, rootMargin:"0px 0px -40px"});
+  els.forEach((e,i)=>{ e.style.transitionDelay = Math.min(i*55,340)+"ms"; io.observe(e); });
+})();
+
+/* ═════════ device tilt ═════════ */
+(function(){
+  const stage = document.querySelector(".stage"), dev = document.getElementById("device");
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  stage.addEventListener("mousemove", e=>{
+    const r = stage.getBoundingClientRect();
+    const px = (e.clientX - r.left)/r.width - .5, py = (e.clientY - r.top)/r.height - .5;
+    dev.style.transform = `rotateY(${(px*11).toFixed(2)}deg) rotateX(${(-py*8).toFixed(2)}deg)`;
+  });
+  stage.addEventListener("mouseleave", ()=>{ dev.style.transform = ""; });
+})();
+
+/* ═════════════════════════ app model ═════════════════════════ */
+/* LIVE is the pipeline payload injected by pipeline/inject.mjs.
+   When null, the app runs on the labelled sample dataset below. */
+const LIVE = (() => {
+  try { const j = JSON.parse(document.getElementById("live-data").textContent); return j && j.assets ? j : null; }
+  catch { return null; }
+})();
+
+const BANDS = [
+  {min:80,key:1,answer:"Yes — buy now.",       label:"Good time to buy",
+   sub:"Prices look genuinely attractive and conditions are supportive. This is as clear as our signal gets."},
+  {min:65,key:2,answer:"Yes — but only part.", label:"Buy a part now",
+   sub:"Prices have come off a little. Buying some today is reasonable — but keep money back."},
+  {min:45,key:3,answer:"Not yet. Wait.",       label:"Wait for a better price",
+   sub:"Nothing is wrong, and nothing is compelling. Holding your money a little longer costs you very little."},
+  {min:30,key:4,answer:"No. Don't chase.",     label:"Not now",
+   sub:"Prices have run ahead of themselves. Buying into this usually means paying up for no good reason."},
+  {min:0, key:5,answer:"No. Stay out today.",  label:"Avoid buying today",
+   sub:"Conditions are actively poor for a new purchase. Better entry points have almost always come along."}
+];
+const bandFor = s => BANDS.find(b => s >= b.min);
+const clamp = (v,lo,hi)=>Math.max(lo,Math.min(hi,v));
+
+const ROUTES = {
+  gold: {
+    etf:      {name:"Gold ETF",     phrase:"a Gold ETF",    keep:.992, note:"brokerage ≈0.3% + expense ≈0.5%/yr"},
+    coins:    {name:"Coins & bars", phrase:"coins or bars", keep:.952, note:"3% GST + ~2% dealer premium"},
+    digital:  {name:"Digital gold", phrase:"digital gold",  keep:.943, note:"3% GST + platform spread"},
+    jewellery:{name:"Jewellery",    phrase:"22K jewellery", keep:.867, note:"3% GST + ~12% making charges"}
+  },
+  silver: {
+    etf:    {name:"Silver ETF",     phrase:"a Silver ETF",   keep:.988, note:"brokerage ≈0.3% + expense ≈0.6%/yr"},
+    coins:  {name:"Coins & bars",   phrase:"silver bars",    keep:.92,  note:"3% GST + ~5% dealer premium"},
+    digital:{name:"Digital silver", phrase:"digital silver", keep:.94,  note:"3% GST + platform spread"}
+  }
+};
+const STEPS = [
+  {share:.30,trigger:null,label:"Buy today"},
+  {share:.20,trigger:.98, label:"If price drops 2%"},
+  {share:.20,trigger:.96, label:"If price drops 4%"},
+  {share:.15,trigger:.94, label:"If price drops 6%"},
+  {share:.15,trigger:.90, label:"Only on a big fall"}
+];
+
+/* Sample fallback — clearly labelled in the UI, never mixed with live data */
+const SAMPLE_HIST = (base,vol,n=130)=>{
+  let v=base*.78; const out=[]; const d0=new Date(2026,1,10);
+  for(let i=0;i<n;i++){ v*= 1 + .0021*Math.sin(i/9) + .0016*Math.sin(i/23+2) + (i%7===3?-.004:.0028)*vol;
+    const dt=new Date(d0); dt.setDate(d0.getDate()+i+Math.floor(i/5)*2);
+    out.push({d:dt.toISOString().slice(0,10), v:Math.round(v)}); }
+  out[out.length-1].v=base; return out;
+};
+const SAMPLE = {
+  generated_at:null,
+  assets:{
+    gold:{ key:"gold", unit_grams:10, intl_inr:152400, landed_inr_est:166300, intl_inr_month_ago:146600,
+      stats:{sma50:150900,sma200:141200,rsi14:56.3,high52w:155700,low52w:118000,fx_change_20d:.006,off_high_pct:-2.1},
+      components:{valuation:30,drawdown:44,trend:65,rsi:50,fx:60}, score:46, band:3,
+      history:SAMPLE_HIST(152400,1) },
+    silver:{ key:"silver", unit_grams:1000, intl_inr:118500, landed_inr_est:129300, intl_inr_month_ago:109200,
+      stats:{sma50:114800,sma200:103600,rsi14:63.1,high52w:121400,low52w:86500,fx_change_20d:.006,off_high_pct:-2.4},
+      components:{valuation:14,drawdown:45,trend:65,rsi:40,fx:60}, score:39, band:4,
+      history:SAMPLE_HIST(118500,1.4) },
+  },
+  weights:{valuation:.35,drawdown:.25,trend:.20,rsi:.10,fx:.10},
+  india_costs:{import_duty:.06,gst:.03,as_of:"2026-08"},
+  usd_inr:88.4, etfs:{gold:[],silver:[]}, sources:null
+};
+
+const DATA = LIVE || SAMPLE;
+const IS_LIVE = !!LIVE;
+const WEIGHTS = DATA.weights;
+
+/* asset view-model */
+const META = {
+  gold:  {title:"Gold",   unitLabel:"per 10g", short:"10g", step:50 },
+  silver:{title:"Silver", unitLabel:"per kg",  short:"kg",  step:500}
+};
+function asset(key){
+  const a = DATA.assets[key], m = META[key];
+  return {...a, ...m, routes:ROUTES[key]};
+}
+
+/* state */
+let S = {tab:"today", asset:"gold", budget:50000,
+  route:{gold:"etf",silver:"etf"},
+  bought:{gold:[true,false,false,false,false], silver:[false,false,false,false,false]},
+  price:{gold:DATA.assets.gold.intl_inr, silver:DATA.assets.silver.intl_inr}};
+const PRICE_AT_LOAD = {...S.price};   // so a live refresh never overwrites a scrubbed price
+let LIVE_NOW = false;                 // true once an in-browser spot fetch has succeeded
+
+/* format */
+const inr  = n => "₹" + Math.round(n).toLocaleString("en-IN");
+const roundTo = (n,q) => Math.round(n/q)*q;
+const inrQ = (n,q) => "₹" + roundTo(n,q).toLocaleString("en-IN");
+const grams = g => g >= 1000 ? (g/1000).toFixed(2)+" kg" : g.toFixed(2)+" g";
+const sgn  = n => (n<0?"−":"+") + Math.abs(n).toFixed(1) + "%";
+const agoText = iso => {
+  if(!iso) return null;
+  const h = (Date.now()-new Date(iso).getTime())/36e5;
+  if(h < 1.5) return "updated "+Math.max(1,Math.round(h*60))+" min ago";
+  if(h < 48)  return "updated "+Math.round(h)+"h ago";
+  return "updated "+Math.round(h/24)+" days ago";
+};
+const STALE_H = LIVE ? (Date.now()-new Date(LIVE.generated_at).getTime())/36e5 : 0;
+const IS_STALE = IS_LIVE && STALE_H > 72;
+
+/* scoring at a hypothetical price.
+   Live mode re-evaluates the price-linked components (valuation, drawdown)
+   against the real stats and keeps the rest fixed — same maths as the
+   pipeline. Sample mode uses the same formula against sample stats. */
+function scoreAt(key, p){
+  const a = DATA.assets[key], st = a.stats, c = a.components;
+  const val = clamp(50 - (p/st.sma200 - 1)*250, 5, 95);
+  const dd  = clamp(35 + (1 - p/st.high52w)*400, 5, 95);
+  const s = val*WEIGHTS.valuation + dd*WEIGHTS.drawdown +
+            c.trend*WEIGHTS.trend + c.rsi*WEIGHTS.rsi + c.fx*WEIGHTS.fx;
+  return Math.round(clamp(s,3,97));
+}
+
+/* reasons generated from the indicators (live and sample alike) */
+function reasons(key){
+  const a = asset(key), st = a.stats, name = a.title.toLowerCase();
+  const pros=[], cons=[];
+  if(st.off_high_pct <= -2)
+    pros.push([`${a.title} is ${Math.abs(st.off_high_pct).toFixed(1)}% below its recent high`,
+      `It has pulled back from the top. Dips like this are usually the better moments to add — if the longer rise is intact.`,
+      `Price ${st.off_high_pct}% vs 52-week high ${inr(st.high52w)}.`]);
+  else
+    cons.push([`${a.title} is near its 52-week high`,
+      `You would be buying at close to the highest price of the past year. That can still work, but it rarely needs to be rushed.`,
+      `Price within ${Math.abs(st.off_high_pct).toFixed(1)}% of the 52-week high.`]);
+  if(a.intl_inr > st.sma200){
+    pros.push([`The long-term rise in ${name} is intact`,
+      `The price is above its long-term average and the trend still points up.`,
+      `Price > SMA200 (${inr(st.sma200)})${st.sma50>st.sma200?"; SMA50 above SMA200":""}.`]);
+    if(a.components.valuation <= 40)
+      cons.push([`${a.title} is still dear against its long-term average`,
+        `Cheaper than last month isn't the same as cheap. You are paying an above-average price on a multi-year view.`,
+        `Price ${((a.intl_inr/st.sma200-1)*100).toFixed(1)}% above SMA200; valuation sub-score ${a.components.valuation}/100.`]);
+  } else {
+    cons.push([`${a.title} is below its long-term average`,
+      `The long trend has weakened. Prices can stay soft for a while when this happens.`,
+      `Price < SMA200 (${inr(st.sma200)}).`]);
+  }
+  if(st.rsi14 != null){
+    if(st.rsi14 < 42) pros.push([`Selling pressure looks tired`,
+      `Recent falls have been heavy enough that sellers usually start running out around here.`,
+      `RSI14 = ${st.rsi14}.`]);
+    else if(st.rsi14 > 65) cons.push([`${a.title} has run hot recently`,
+      `The recent climb has been fast. Fast climbs often pause or give a little back.`,
+      `RSI14 = ${st.rsi14}.`]);
+  }
+  if(st.fx_change_20d > .004) pros.push([`A weakening rupee props up Indian prices`,
+    `Indian ${name} is the world price multiplied by the rupee rate. A softer rupee pushes up what you pay here even if world prices sit still.`,
+    `USD/INR +${(st.fx_change_20d*100).toFixed(1)}% over 20 days.`]);
+  else if(st.fx_change_20d < -.004) cons.push([`A firming rupee is a headwind`,
+    `A stronger rupee pulls Indian prices down even when world prices hold — waiting has an extra tailwind.`,
+    `USD/INR ${(st.fx_change_20d*100).toFixed(1)}% over 20 days.`]);
+  return {pros:pros.slice(0,3), cons:cons.slice(0,3)};
+}
+
+/* ═════════ gauge ═════════ */
+function gauge(score){
+  const cx=120,cy=118,r=92,W=13;
+  const pol=(d,rad)=>{const a=d*Math.PI/180;return[cx+rad*Math.cos(a),cy+rad*Math.sin(a)];};
+  const arc=(d0,d1,rad)=>{const[a,b]=pol(d0,rad),[c,d]=pol(d1,rad);
+    return `M${a.toFixed(2)},${b.toFixed(2)} A${rad},${rad} 0 0,1 ${c.toFixed(2)},${d.toFixed(2)}`;};
+  const segs=[5,4,3,2,1].map((band,i)=>
+    `<path d="${arc(181+i*35.6,180+(i+1)*35.6,r)}" style="stroke:var(--b${band})" stroke-width="${W}"
+      fill="none" stroke-linecap="round" opacity=".9"/>`).join("");
+  const ang=(score/100)*180-90;
+  return `<svg class="gauge" viewBox="0 0 240 136" role="img"
+    aria-label="Today's reading sits in band ${bandFor(score).key} of 5: ${bandFor(score).label}.">
+    <defs><filter id="gl" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/><feMerge>
+      <feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <g filter="url(#gl)">${segs}</g>
+    ${[0,.25,.5,.75,1].map(f=>{                       /* gold instrument ticks */
+      const a=(180+f*180)*Math.PI/180;
+      const x1=cx+102*Math.cos(a),y1=cy+102*Math.sin(a);
+      const x2=cx+109*Math.cos(a),y2=cy+109*Math.sin(a);
+      return `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"
+        style="stroke:var(--gold)" stroke-width="2" stroke-linecap="round" opacity=".55"/>`;}).join("")}
+    <g class="needle" style="transform:rotate(${ang.toFixed(1)}deg)">
+      <path d="M120,38 L114,116 L126,116 Z" style="fill:var(--band)"/>
+    </g>
+    <circle cx="${cx}" cy="${cy}" r="11.5" style="fill:var(--ink1);stroke:var(--band)" stroke-width="3.5"/>
+    <circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--gold)"/>
+  </svg>`;
+}
+
+/* ═════════ chart (real history series) ═════════ */
+function chart(key){
+  const A = asset(key);
+  const s = A.history.map(r=>r.v);
+  const W=350,H=142,P=10,lo=Math.min(...s)*.985,hi=Math.max(...s)*1.02;
+  const X=i=>P+i*(W-2*P)/(s.length-1), Y=v=>H-P-((v-lo)/(hi-lo))*(H-2*P);
+  const line=s.map((v,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
+  const trig=Y(A.intl_inr*.98);
+  const months = Math.round(s.length/21.5);
+  const buyDot = !IS_LIVE ? (()=>{ const bi=Math.max(0,s.length-40); return `
+    <circle cx="${X(bi).toFixed(1)}" cy="${Y(s[bi]).toFixed(1)}" r="4.5"
+      style="fill:var(--ink1);stroke:var(--b1)" stroke-width="2.5"/>
+    <text x="${X(bi).toFixed(1)}" y="${(Y(s[bi])+18).toFixed(1)}" text-anchor="middle"
+      style="fill:var(--b1);font-size:10px;font-weight:700">you bought</text>`; })() : "";
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"
+    aria-label="${A.title} over about ${months} months, from ${inr(s[0])} to ${inr(s[s.length-1])} ${A.unitLabel}.">
+    <defs><linearGradient id="fd${key}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:var(--gold);stop-opacity:.38"/>
+      <stop offset="100%" style="stop-color:var(--gold);stop-opacity:0"/></linearGradient></defs>
+    <path d="${line} L${X(s.length-1).toFixed(1)},${H-P} L${P},${H-P} Z" style="fill:url(#fd${key})"/>
+    <line x1="${P}" y1="${trig.toFixed(1)}" x2="${W-P}" y2="${trig.toFixed(1)}"
+      style="stroke:var(--b3)" stroke-width="1.4" stroke-dasharray="4 4" opacity=".9"/>
+    <text x="${W-P}" y="${(trig-6).toFixed(1)}" text-anchor="end"
+      style="fill:var(--b3);font-size:10px;font-weight:700">next step · ${inrQ(A.intl_inr*.98,A.step)}</text>
+    <path d="${line}" style="fill:none;stroke:var(--gold)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    ${buyDot}
+    <circle cx="${X(s.length-1).toFixed(1)}" cy="${Y(s[s.length-1]).toFixed(1)}" r="4" style="fill:var(--gold)"/>
+  </svg>`;
+}
+
+/* ═════════ shared bits ═════════ */
+const assetSeg = () => `
+  <div class="assetseg" role="group" aria-label="Metal">
+    <button data-asset="gold" aria-pressed="${S.asset==="gold"}">Gold</button>
+    <button data-asset="silver" class="ag" aria-pressed="${S.asset==="silver"}">Silver</button>
+  </div>`;
+
+function sinceCard(key){
+  const A = asset(key), h = A.history;
+  if(h.length < 2) return "";
+  const prev = h[h.length-2].v, delta = A.intl_inr - prev, pct = (delta/prev)*100;
+  const txt = Math.abs(pct) < .15
+    ? `${A.title} is little changed since the last close.`
+    : `${A.title} ${delta<0?"fell":"rose"} <strong>${inr(Math.abs(delta))}</strong> ${A.unitLabel} (${sgn(pct)}) since the last close.`;
+  return `<div class="blk"><p class="lbl">Since the last close</p>
+    <p style="margin:0;font-size:14.5px;line-height:1.55">${txt}</p></div>`;
+}
+
+function etfBlock(key){
+  const list = (DATA.etfs||{})[key]||[];
+  if(!list.length) return "";
+  return `<div class="blk">
+    <p class="lbl">Real Indian ${key} ETF prices (NAV)</p>
+    <table class="rows">
+      <thead><tr><th>Fund</th><th style="text-align:right">NAV</th><th style="text-align:right">Date</th></tr></thead>
+      <tbody>${list.map(e=>`<tr><td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.name.replace(/\s*-\s*(growth|idcw).*$/i,"")}</td>
+        <td class="n">₹${e.nav.toLocaleString("en-IN",{maximumFractionDigits:2})}</td>
+        <td class="n" style="font-weight:500;color:var(--txt3)">${e.date}</td></tr>`).join("")}</tbody>
+    </table>
+    <p class="note">Official end-of-day NAVs from AMFI. An ETF unit is not one gram — compare funds by expense ratio and tracking, not NAV size.</p>
+  </div>`;
+}
+
+/* ═════════ panes ═════════ */
+function paneToday(){
+  const key=S.asset, A=asset(key), rt=A.routes[S.route[key]];
+  const price=S.price[key], moved=price!==A.intl_inr;
+  const sc=scoreAt(key,price), B=bandFor(sc);
+  const first=Math.round(S.budget*STEPS[0].share/100)*100;
+  const gramsGot=first*rt.keep/(A.landed_inr_est/A.unit_grams);
+  let flip=price; while(scoreAt(key,flip)<80 && flip>A.intl_inr*.78) flip-=A.step;
+  const canFlip=scoreAt(key,flip)>=80;
+  const compSpread=Math.max(...Object.values(A.components))-Math.min(...Object.values(A.components));
+  const agreeTxt=compSpread>34?"Mixed picture — signals disagree":"Signals broadly agree";
+
+  return `<div class="pane" style="--band:var(--b${B.key});--band-bg:var(--b${B.key}-bg)">
+    ${assetSeg()}
+    <div class="ask">
+      <p class="q">Should I buy ${A.title.toLowerCase()} today?</p>
+      <p class="a">${B.answer}</p>
+      ${gauge(sc)}
+      <div class="gends"><span>Don't buy</span><span>Buy</span></div>
+      <span class="bandpill"><i></i>${B.label}</span>
+      <p class="sub">${moved?`At ${inrQ(price,A.step)} ${A.unitLabel}, this is what we would tell you.`:B.sub}</p>
+      ${IS_STALE?`<p class="sub" style="color:var(--b4);font-weight:700">Our data is ${Math.round(STALE_H/24)} days old — treat this call with care.</p>`:""}
+    </div>
+    <div class="blk" style="border-top:0;padding-top:14px">
+      <div class="tiles">
+        <div class="tile hero"><div class="k">Buy today</div><div class="v">${inr(first)}</div>
+          <div class="g">≈ ${grams(gramsGot)} as ${rt.phrase}</div></div>
+        <div class="tile"><div class="k">Keep ready</div><div class="v">${inr(S.budget-first)}</div>
+          <div class="g">for the next steps</div></div>
+      </div>
+      <div class="strip">
+        <div class="chip"><div class="k">World price</div><div class="v">${inrQ(price,A.step)}</div></div>
+        <div class="chip"><div class="k">Est. shop price</div><div class="v">${inrQ(A.landed_inr_est*(price/A.intl_inr),A.step)}</div></div>
+        <div class="chip"><div class="k">Off 52w high</div><div class="v ${A.stats.off_high_pct<0?"dn":"up"}">${sgn(A.stats.off_high_pct)}</div></div>
+      </div>
+      <div class="meta">
+        <span class="live">${LIVE_NOW?"spot price live · fetched just now":IS_LIVE?(agoText(DATA.generated_at)||"live"):"sample data"}</span>
+        <span class="simple-only">${agreeTxt}</span>
+        <span class="detail-only">Score ${sc} · band ${B.key} of 5</span>
+        <span>${A.unitLabel} · world price in ₹</span>
+      </div>
+    </div>
+    <div class="blk">
+      <p class="lbl">Try it — what if the price were different?</p>
+      <div class="scrub">
+        <div class="scrub-top"><span class="t">${A.title} price ${A.unitLabel}</span><span class="p">${inrQ(price,A.step)}</span></div>
+        <p class="say">${sc>=80
+          ? `At this price we'd say <b>buy properly</b> — not just a part.`
+          : canFlip
+            ? `If ${A.title.toLowerCase()} fell to <b>${inrQ(flip,A.step)}</b>, we'd change our answer to <b>“Yes — buy now.”</b> That's ${Math.abs((flip/A.intl_inr-1)*100).toFixed(1)}% below today.`
+            : `Even a large fall alone wouldn't make this a clear buy — the other signals would need to improve too.`}</p>
+        <input id="scrub" type="range" min="${Math.round(A.intl_inr*.86)}" max="${Math.round(A.intl_inr*1.1)}"
+          step="${A.step}" value="${price}" aria-label="Try a different ${A.title} price">
+        <div class="sends"><span>${inrQ(A.intl_inr*.86,A.step)}</span><span>${inrQ(A.intl_inr*1.1,A.step)}</span></div>
+        ${moved?`<button class="reset" id="resetPrice">↺ Back to today's real price</button>`:""}
+      </div>
+    </div>
+    ${sinceCard(key)}
+    <div class="blk">
+      <p class="lbl">Why we say that — tap to open</p>
+      <div class="reasons">
+        ${(r=>[...r.pros.map(x=>["pro","✓",...x]),...r.cons.map(x=>["con","!",...x])])(reasons(key))
+          .map(([k,ic,t,plain,tech])=>`
+          <details class="rsn ${k}">
+            <summary><span class="ic">${ic}</span><span class="tx">${t}</span><span class="car">▼</span></summary>
+            <div class="more simple-only">${plain}</div>
+            <div class="more detail-only">${tech}</div>
+          </details>`).join("")}
+      </div>
+    </div>
+    <div class="blk">
+      <p class="lbl">${IS_LIVE?"Six months of real prices":"Six months of prices"}</p>
+      <div class="chartwrap">${chart(key)}</div>
+      <p class="note">${IS_LIVE
+        ?`World ${A.title.toLowerCase()} converted to rupees, daily closes. The dashed line is the price that unlocks step 2 of your plan.`
+        :`The green dot is a sample purchase. The dashed line is the price that unlocks step 2 of your plan.`}</p>
+    </div>
+    ${etfBlock(key)}
+    <div class="blk detail-only">
+      <p class="lbl">What the score is made of</p>
+      <div class="bars">
+        ${Object.entries(A.components).map(([k,v])=>{
+          const label={valuation:"Valuation vs 200-day",drawdown:"Distance from high",trend:"Long-term trend",rsi:"Momentum (RSI)",fx:"USD/INR"}[k]||k;
+          return `<div class="bar"><span>${label} ·×${WEIGHTS[k]}</span><span class="track"><i class="fill" style="width:${v}%"></i></span><span class="n">${v}</span></div>`;}).join("")}
+      </div>
+      <p class="mono" style="margin-top:14px">
+        SMA50 ${inr(A.stats.sma50)} · SMA200 ${inr(A.stats.sma200)} · RSI14 ${A.stats.rsi14??"—"}<br>
+        52w range ${inr(A.stats.low52w)} – ${inr(A.stats.high52w)} · USD/INR 20d ${sgn(A.stats.fx_change_20d*100)}<br>
+        ${IS_LIVE?`generated ${DATA.generated_at}`:`sample dataset — no live feed attached`}</p>
+    </div>
+    ${IS_LIVE?`<div class="srcnote">Sources: spot ${DATA.sources.spot} · FX ${DATA.sources.fx} · history ${DATA.sources.history} · NAVs ${DATA.sources.etf_nav}.
+      Shop price is an estimate: world price + ${(DATA.india_costs.import_duty*100).toFixed(0)}% import duty + ${(DATA.india_costs.gst*100).toFixed(0)}% GST (rates as of ${DATA.india_costs.as_of}); local dealer premium not included. Not investment advice.</div>`:""}
+  </div>`;
+}
+
+function panePlan(){
+  const key=S.asset, A=asset(key), rt=A.routes[S.route[key]];
+  const perGram=A.landed_inr_est/A.unit_grams;
+  const gNow=S.budget*rt.keep/perGram, gThen=S.budget*rt.keep/(A.intl_inr_month_ago*(A.landed_inr_est/A.intl_inr)/A.unit_grams);
+  const doneN=S.bought[key].filter(Boolean).length;
+  const doneAmt=STEPS.reduce((a,st,i)=>a+(S.bought[key][i]?S.budget*st.share:0),0);
+  return `<div class="pane" style="--band:var(--b2);--band-bg:var(--b2-bg)">
+    ${assetSeg()}
+    <div class="blk">
+      <p class="lbl">How much are you putting into ${A.title.toLowerCase()}?</p>
+      <div class="amount-display" id="amtOut">${inr(S.budget)}</div>
+      <div class="amount-sub">Every figure in the app comes from this one number</div>
+      <input id="amt" class="plain" type="range" min="10000" max="500000" step="5000"
+        value="${S.budget}" aria-label="Amount to invest" style="margin-top:12px">
+      <div class="sends"><span>₹10,000</span><span>₹5,00,000</span></div>
+    </div>
+    <div class="blk">
+      <p class="lbl">How do you buy ${A.title.toLowerCase()}?</p>
+      <div class="chips" id="routes">
+        ${Object.entries(A.routes).map(([k,v])=>`<button data-route="${k}" aria-pressed="${k===S.route[key]}">${v.name}</button>`).join("")}
+      </div>
+      <p class="note">${rt.note}</p>
+    </div>
+    <div class="blk">
+      <p class="lbl">What your money actually buys</p>
+      <div class="tiles">
+        <div class="tile hero"><div class="k">${A.title} you get today</div><div class="v">${grams(gNow)}</div>
+          <div class="g">as ${rt.phrase}, at est. shop price</div></div>
+        <div class="tile"><div class="k">A month ago</div><div class="v">${grams(gThen)}</div>
+          <div class="g">same money</div></div>
+      </div>
+      <p class="note">${gNow<gThen
+        ? `${A.title} has become dearer — ${inr(S.budget)} buys <strong>${grams(gThen-gNow)} less</strong> than it did a month ago.`
+        : `${A.title} has eased — ${inr(S.budget)} buys <strong>${grams(gNow-gThen)} more</strong> than a month ago.`}</p>
+      <table class="rows" style="margin-top:16px">
+        <thead><tr><th>Route</th><th style="text-align:right">You get</th><th style="text-align:right">Lost to costs</th></tr></thead>
+        <tbody>${Object.entries(A.routes).map(([k,v])=>`<tr class="${k===S.route[key]?"on":""}">
+          <td>${v.name}</td><td class="n">${grams(S.budget*v.keep/perGram)}</td>
+          <td class="n">${inr(S.budget*(1-v.keep))}</td></tr>`).join("")}</tbody>
+      </table>
+      ${key==="gold"?`<p class="note">Making charges on jewellery are mostly gone the moment you buy — you don't get them back when you sell. That gap is far bigger than anything good timing can win, and this app will keep saying so.</p>`:
+      `<p class="note">Physical silver is bulky — ₹50,000 is roughly half a kilogram. ETFs and digital silver avoid storage and GST-on-resale friction.</p>`}
+    </div>
+    <div class="blk">
+      <p class="lbl">Your ${A.title.toLowerCase()} plan · ${doneN} of 5 steps done</p>
+      <div class="prog"><i style="width:${doneN/5*100}%"></i></div>
+      <ul class="ladder">
+        ${STEPS.map((st,i)=>{
+          const amt=Math.round(S.budget*st.share/100)*100, done=S.bought[key][i], ready=!done&&i===1;
+          return `<li class="rung ${done?"done":""} ${ready?"ready":""}">
+            <button class="tick" data-step="${i}" aria-pressed="${done}"
+              aria-label="${done?"Undo":"Mark"} step ${i+1} as bought">✓</button>
+            <span><span class="t">Step ${i+1} · ${st.label}${ready?'<span class="tag">Ready</span>':""}</span>
+            <span class="s">${done?"Bought · "+inrQ(A.intl_inr,A.step):(st.trigger?"≈ "+inrQ(A.intl_inr*st.trigger,A.step):inrQ(A.intl_inr,A.step))} ${A.unitLabel}</span></span>
+            <span class="amt">${inr(amt)}<small>${(st.share*100).toFixed(0)}%</small></span></li>`;
+        }).join("")}
+      </ul>
+      <p class="note">Bought so far: <strong>${inr(doneAmt)}</strong>. We message you once when a step is ready — you never have to watch prices. Skipping a step is fine, and we won't nag you about it.</p>
+    </div>
+  </div>`;
+}
+
+function paneRecord(){
+  return `<div class="pane" style="--band:var(--b1);--band-bg:var(--b1-bg)">
+    <div class="blk">
+      <p class="lbl">How this will work</p>
+      <p style="margin:0 0 6px;color:var(--txt2);font-size:14px">Every call gets stored on the day it's made and scored 5, 20, 60 and 120 days later. Nothing is ever deleted or rewritten.</p>
+      ${IS_LIVE?`<div class="callout" style="background:var(--b3-bg);border-color:color-mix(in srgb,var(--b3) 34%,transparent)">
+        <b style="color:var(--b3)">The live record starts now.</b><br>
+        Signals began on ${(DATA.generated_at||"").slice(0,10)}. Too early to judge us — the numbers below show the format with illustrative data until real calls mature.</div>`:""}
+      <div class="stat"><span class="k">Times we said “buy”</span><span class="v">47</span></div>
+      <div class="stat"><span class="k">Higher 20 days later</span><span class="v up">31 of 47 · 66%</span></div>
+      <div class="stat"><span class="k">Typical result</span><span class="v up">+1.9%</span></div>
+      <div class="stat"><span class="k">Worst result</span><span class="v dn">−6.1%</span></div>
+      <div class="callout"><b>Did it beat just buying every month?</b><br>
+        Following the plan cost <strong>₹1,44,900</strong> per 10g on average.<br>
+        Buying a fixed amount monthly cost <strong>₹1,46,300</strong>.<br>
+        About <b>1% better</b>, after the costs of buying. Past results don't guarantee future ones — if this ever stops being true, this screen will say so.</div>
+      <p class="note" style="margin-top:10px">Figures above are illustrative format examples, not live results.</p>
+    </div>
+    <div class="blk detail-only">
+      <p class="lbl">All four horizons · illustrative</p>
+      <table class="rows">
+        <thead><tr><th>After</th><th style="text-align:right">Positive</th><th style="text-align:right">Median</th><th style="text-align:right">Worst</th></tr></thead>
+        <tbody>
+          <tr><td>5 days</td><td class="n">58%</td><td class="n">+0.4%</td><td class="n">−4.2%</td></tr>
+          <tr><td>20 days</td><td class="n">66%</td><td class="n">+1.9%</td><td class="n">−6.1%</td></tr>
+          <tr><td>60 days</td><td class="n">71%</td><td class="n">+4.4%</td><td class="n">−9.8%</td></tr>
+          <tr><td>120 days</td><td class="n">69%</td><td class="n">+7.1%</td><td class="n">−12.3%</td></tr>
+        </tbody>
+      </table>
+      <p class="note">All four are always shown together. Picking the flattering horizon is the easiest way to fool yourself, so the interface removes the choice.</p>
+    </div>
+  </div>`;
+}
+
+/* ═════════ wiring ═════════ */
+const screen = document.getElementById("screen");
+function render(keep){
+  const y = keep ? screen.scrollTop : 0;
+  screen.innerHTML = S.tab==="today"?paneToday():S.tab==="plan"?panePlan():paneRecord();
+  screen.scrollTop = y;
+
+  screen.querySelectorAll("[data-asset]").forEach(b=>b.addEventListener("click",()=>{
+    if(S.asset!==b.dataset.asset){ S.asset=b.dataset.asset; render(); }
+  }));
+  const sc = document.getElementById("scrub");
+  if(sc) sc.addEventListener("input", e=>{
+    S.price[S.asset] = +e.target.value; render(true);
+    const n = document.getElementById("scrub"); if(n) n.focus({preventScroll:true});
+  });
+  const rp = document.getElementById("resetPrice");
+  if(rp) rp.addEventListener("click", ()=>{ S.price[S.asset]=DATA.assets[S.asset].intl_inr; render(true); });
+  const amt = document.getElementById("amt");
+  if(amt){
+    amt.addEventListener("input", e=>{
+      S.budget = +e.target.value;
+      document.getElementById("amtOut").textContent = inr(S.budget);
+    });
+    amt.addEventListener("change", ()=>render(true));
+  }
+  const routes = document.getElementById("routes");
+  if(routes) routes.addEventListener("click", e=>{
+    const b = e.target.closest("[data-route]"); if(!b) return;
+    S.route[S.asset] = b.dataset.route; render(true);
+  });
+  screen.querySelectorAll(".tick").forEach(t=>t.addEventListener("click", ()=>{
+    S.bought[S.asset][+t.dataset.step] = !S.bought[S.asset][+t.dataset.step]; render(true);
+  }));
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click", ()=>{
+  document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected","false"));
+  b.setAttribute("aria-selected","true"); S.tab = b.dataset.tab; render();
+}));
+const bS=document.getElementById("btnSimple"), bD=document.getElementById("btnDetail");
+function setDetail(on){
+  document.body.classList.toggle("detailed", on);
+  bS.setAttribute("aria-pressed", String(!on));
+  bD.setAttribute("aria-pressed", String(on));
+  document.getElementById("modeLabel").textContent = on ? "Long-term · detailed" : "Long-term view";
+}
+bS.addEventListener("click", ()=>setDetail(false));
+bD.addEventListener("click", ()=>setDetail(true));
+const lite = document.getElementById("liteBtn"), dev = document.getElementById("device");
+lite.addEventListener("click", ()=>{
+  const on = dev.classList.toggle("lite");
+  lite.setAttribute("aria-pressed", String(on));
+  lite.textContent = on ? "☾" : "☀";
+  lite.setAttribute("aria-label", on ? "Switch the app to dark mode" : "Switch the app to light mode");
+});
+
+/* page chrome reflects live/sample */
+(function(){
+  document.getElementById("chromeDate").textContent =
+    new Date().toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"short"});
+  const chip = document.getElementById("dataChip");
+  if(IS_LIVE){
+    chip.classList.add("live");
+    chip.textContent = IS_STALE
+      ? `◆ Live data · ${Math.round(STALE_H/24)} days old`
+      : `● Live data · ${agoText(DATA.generated_at)}`;
+    if(IS_STALE) chip.classList.remove("live");
+    const g=DATA.assets.gold, s=DATA.assets.silver;
+    document.getElementById("statGold").textContent = inr(g.intl_inr);
+    document.getElementById("statSilver").textContent = inr(s.intl_inr);
+    document.getElementById("statMeta").textContent = "USD/INR " + DATA.usd_inr;
+    document.getElementById("statMetaK").textContent = "rupee rate used";
+  } else {
+    document.getElementById("statSilver").textContent = inr(SAMPLE.assets.silver.intl_inr);
+  }
+})();
+render();
+
+/* ═════════ live spot refresh on every visit ═════════
+   The baked payload refreshes twice a day via the workflow; this pulls the
+   CURRENT spot price and USD/INR directly in the browser on every page open,
+   so the headline price and verdict are live-now. Indicators (averages,
+   52-week range, ETF NAVs) still come from the baked payload — recomputing
+   the verdict at the fresh price against those stats is exactly what the
+   price scrubber already does. Fails silently: offline, a blocked network,
+   or a CORS change just leaves the baked data standing, correctly labelled
+   with its age. */
+(async function liveRefresh(){
+  if(!IS_LIVE) return;                       // sample mode stays sample
+  const OZT = 31.1034768;
+  const j = (u)=>fetch(u,{signal:AbortSignal.timeout(6000)}).then(r=>{ if(!r.ok) throw 0; return r.json(); });
+  try{
+    const [xau,xag,fx] = await Promise.all([
+      j("https://api.gold-api.com/price/XAU"),
+      j("https://api.gold-api.com/price/XAG"),
+      j("https://open.er-api.com/v6/latest/USD").catch(()=>j("https://api.frankfurter.app/latest?from=USD&to=INR")),
+    ]);
+    const rate = fx?.rates?.INR;
+    if(!(xau?.price>0 && xag?.price>0 && rate>0)) return;
+    for(const [k,usd] of [["gold",xau.price],["silver",xag.price]]){
+      const a = DATA.assets[k];
+      const live = usd*rate/OZT*a.unit_grams;
+      if(!(live > a.intl_inr*0.7 && live < a.intl_inr*1.3)) return;   // sanity: reject absurd moves
+      a.landed_inr_est = Math.round(a.landed_inr_est*(live/a.intl_inr));
+      a.intl_inr = Math.round(live);
+      a.stats.off_high_pct = Math.round((live/a.stats.high52w-1)*1000)/10;
+      if(a.history.length) a.history[a.history.length-1].v = Math.round(live);
+      if(S.price[k] === PRICE_AT_LOAD[k]) S.price[k] = Math.round(live);
+    }
+    LIVE_NOW = true;
+    render(true);
+    const chip = document.getElementById("dataChip");
+    chip.classList.add("live");
+    chip.textContent = "● Live price · fetched just now";
+    document.getElementById("statGold").textContent = inr(DATA.assets.gold.intl_inr);
+    document.getElementById("statSilver").textContent = inr(DATA.assets.silver.intl_inr);
+    document.getElementById("statMeta").textContent = "USD/INR " + (Math.round(rate*100)/100);
+  }catch(e){ /* baked data stands, labelled with its age */ }
+})();
+</script>

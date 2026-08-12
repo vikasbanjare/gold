@@ -1,0 +1,107 @@
+name: Refresh market data & deploy site
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron is UTC. IST = UTC+5:30.
+    #   02:45 UTC = 08:15 IST  (morning, before Indian market hours)
+    #   12:45 UTC = 18:15 IST  (evening, after US data releases start)
+    # Note: GitHub only runs schedules from the default branch, and firing can
+    # lag a scheduled time by up to ~15-30 minutes under load.
+    - cron: "45 2 * * *"
+    - cron: "45 12 * * *"
+  push:
+    paths:
+      - "index.html"
+      - "pipeline/**"
+      - ".github/workflows/refresh-data.yml"
+
+concurrency:
+  group: refresh-data-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch market data
+        run: node pipeline/fetch.mjs --out pipeline/data.json
+
+      - name: Inject data into the site
+        run: node pipeline/inject.mjs pipeline/data.json index.html
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "gold-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git add pipeline/data.json index.html
+          git commit -m "data: refresh market data ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+  # Deploys in the SAME run as the refresh: commits pushed with GITHUB_TOKEN do
+  # not trigger other workflows, so a separate on-push deploy would never fire
+  # after the daily data commit.
+  deploy:
+    needs: refresh
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # branch tip, not the triggering sha — picks up the data commit above
+          ref: ${{ github.ref_name }}
+
+      # The workflow cannot create the Pages site itself: that API needs admin
+      # rights the default GITHUB_TOKEN lacks ("Resource not accessible by
+      # integration"). So probe instead, and skip cleanly until the one-time
+      # setting from GO-LIVE.md (Settings → Pages → Source: GitHub Actions)
+      # has been made — a red check twice a day before then is just noise.
+      - name: Check whether GitHub Pages is enabled
+        id: probe
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if curl -sf -H "Authorization: Bearer $GH_TOKEN" \
+                   -H "Accept: application/vnd.github+json" \
+                   "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages" > /dev/null; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GitHub Pages is not enabled yet. Set Settings -> Pages -> Source to 'GitHub Actions' (see GO-LIVE.md); deploys start automatically after that."
+          fi
+
+      - name: Stage site
+        if: steps.probe.outputs.enabled == 'true'
+        run: mkdir -p _site && cp index.html _site/
+
+      - uses: actions/configure-pages@v5
+        if: steps.probe.outputs.enabled == 'true'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.probe.outputs.enabled == 'true'
+        with:
+          path: _site
+
+      - id: deployment
+        if: steps.probe.outputs.enabled == 'true'
+        uses: actions/deploy-pages@v4
