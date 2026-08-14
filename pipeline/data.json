@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-13T14:06:17.869Z",
+ "generated_at": "2026-08-14T04:30:20.359Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,30 +19,30 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 95.41,
+ "usd_inr": 95.48,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 134185,
-   "landed_inr_est": 146503,
+   "intl_inr": 132812,
+   "landed_inr_est": 145004,
    "intl_inr_month_ago": 125465,
-   "spot_usd_ozt": 4374.299805,
-   "spot_at": "2026-08-13T14:05:51Z",
+   "spot_usd_ozt": 4326.600098,
+   "spot_at": "2026-08-14T04:29:53Z",
    "stats": {
-    "sma50": 127789,
-    "sma200": 133568,
-    "rsi14": 63.9,
+    "sma50": 127760,
+    "sma200": 133561,
+    "rsi14": 59.8,
     "high52w": 156021,
     "low52w": 93508,
-    "fx_change_20d": -0.0111,
-    "off_high_pct": -14
+    "fx_change_20d": -0.0132,
+    "off_high_pct": -14.9
    },
    "components": {
-    "valuation": 49,
-    "drawdown": 91,
-    "trend": 55,
-    "rsi": 40,
+    "valuation": 51,
+    "drawdown": 95,
+    "trend": 40,
+    "rsi": 50,
     "fx": 40
    },
    "score": 59,
@@ -562,39 +562,39 @@
     },
     {
      "d": "2026-08-12",
-     "v": 135200
+     "v": 135150
     },
     {
-     "d": "2026-08-13",
-     "v": 135983
+     "d": "2026-08-14",
+     "v": 134366
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 199061,
-   "landed_inr_est": 217334,
+   "intl_inr": 196781,
+   "landed_inr_est": 214845,
    "intl_inr_month_ago": 177184,
-   "spot_usd_ozt": 64.891998,
-   "spot_at": "2026-08-13T14:05:51Z",
+   "spot_usd_ozt": 64.105003,
+   "spot_at": "2026-08-14T04:29:52Z",
    "stats": {
-    "sma50": 190358,
-    "sma200": 210063,
-    "rsi14": 60.3,
+    "sma50": 190311,
+    "sma200": 210051,
+    "rsi14": 57.8,
     "high52w": 332874,
     "low52w": 105487,
-    "fx_change_20d": -0.0111,
-    "off_high_pct": -40.2
+    "fx_change_20d": -0.0132,
+    "off_high_pct": -40.9
    },
    "components": {
-    "valuation": 63,
+    "valuation": 66,
     "drawdown": 95,
     "trend": 40,
-    "rsi": 40,
+    "rsi": 50,
     "fx": 40
    },
-   "score": 62,
+   "score": 64,
    "band": 3,
    "history": [
     {
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-08-12",
-     "v": 201027
+     "v": 200952
     },
     {
-     "d": "2026-08-13",
-     "v": 199675
+     "d": "2026-08-14",
+     "v": 196647
     }
    ]
   }
@@ -1124,64 +1124,64 @@
   "gold": [
    {
     "name": "SBI Gold ETF",
-    "nav": 129.7676,
-    "date": "12-Aug-2026",
+    "nav": 129.289,
+    "date": "13-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "HDFC Gold ETF - Growth Option",
-    "nav": 130.0261,
-    "date": "12-Aug-2026",
+    "nav": 129.5455,
+    "date": "13-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "ICICI Prudential Gold ETF",
-    "nav": 130.3254,
-    "date": "12-Aug-2026",
+    "nav": 129.846,
+    "date": "13-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "KOTAK GOLD ETF",
-    "nav": 127.0324,
-    "date": "12-Aug-2026",
+    "nav": 126.563,
+    "date": "13-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Axis Gold ETF",
-    "nav": 126.8027,
-    "date": "12-Aug-2026",
+    "nav": 126.3362,
+    "date": "13-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Mirae Asset Gold ETF",
-    "nav": 147.937,
-    "date": "12-Aug-2026",
+    "nav": 147.3947,
+    "date": "13-Aug-2026",
     "metal": "gold"
    }
   ],
   "silver": [
    {
     "name": "Nippon India Silver ETF",
-    "nav": 225.5625,
-    "date": "12-Aug-2026",
+    "nav": 222.029,
+    "date": "13-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "SBI Silver ETF",
-    "nav": 231.0647,
-    "date": "12-Aug-2026",
+    "nav": 227.4639,
+    "date": "13-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "HDFC Silver ETF - Growth Option",
-    "nav": 225.5577,
-    "date": "12-Aug-2026",
+    "nav": 222.0453,
+    "date": "13-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "ICICI PRUDENTIAL SILVER ETF",
-    "nav": 235.4924,
-    "date": "12-Aug-2026",
+    "nav": 231.7864,
+    "date": "13-Aug-2026",
     "metal": "silver"
    }
   ]
