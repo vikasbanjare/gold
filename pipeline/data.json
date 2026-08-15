@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-14T14:00:32.244Z",
+ "generated_at": "2026-08-15T03:24:58.951Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,33 +19,33 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 95.48,
+ "usd_inr": 95.53,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 134623,
-   "landed_inr_est": 146981,
+   "intl_inr": 134454,
+   "landed_inr_est": 146797,
    "intl_inr_month_ago": 123850,
-   "spot_usd_ozt": 4385.600098,
-   "spot_at": "2026-08-14T14:00:24Z",
+   "spot_usd_ozt": 4377.600098,
+   "spot_at": "2026-08-15T03:24:55Z",
    "stats": {
-    "sma50": 127728,
-    "sma200": 133674,
-    "rsi14": 64.2,
+    "sma50": 127727,
+    "sma200": 133673,
+    "rsi14": 64,
     "high52w": 156021,
     "low52w": 93508,
-    "fx_change_20d": -0.0128,
-    "off_high_pct": -13.7
+    "fx_change_20d": -0.009,
+    "off_high_pct": -13.8
    },
    "components": {
-    "valuation": 48,
+    "valuation": 49,
     "drawdown": 90,
     "trend": 55,
     "rsi": 40,
     "fx": 40
    },
-   "score": 58,
+   "score": 59,
    "band": 3,
    "history": [
     {
@@ -562,39 +562,39 @@
     },
     {
      "d": "2026-08-13",
-     "v": 133761
+     "v": 133841
     },
     {
      "d": "2026-08-14",
-     "v": 136367
+     "v": 135939
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 201075,
-   "landed_inr_est": 219534,
+   "intl_inr": 199110,
+   "landed_inr_est": 217388,
    "intl_inr_month_ago": 173700,
-   "spot_usd_ozt": 65.503998,
-   "spot_at": "2026-08-14T14:00:23Z",
+   "spot_usd_ozt": 64.827003,
+   "spot_at": "2026-08-15T03:24:54Z",
    "stats": {
-    "sma50": 189831,
-    "sma200": 210410,
-    "rsi14": 61.9,
+    "sma50": 189794,
+    "sma200": 210400,
+    "rsi14": 60.4,
     "high52w": 332874,
     "low52w": 105487,
-    "fx_change_20d": -0.0128,
-    "off_high_pct": -39.6
+    "fx_change_20d": -0.009,
+    "off_high_pct": -40.2
    },
    "components": {
-    "valuation": 61,
+    "valuation": 63,
     "drawdown": 95,
     "trend": 40,
     "rsi": 40,
     "fx": 40
    },
-   "score": 61,
+   "score": 62,
    "band": 3,
    "history": [
     {
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-08-13",
-     "v": 198861
+     "v": 198980
     },
     {
      "d": "2026-08-14",
-     "v": 200717
+     "v": 198833
     }
    ]
   }
@@ -1124,64 +1124,64 @@
   "gold": [
    {
     "name": "SBI Gold ETF",
-    "nav": 129.289,
-    "date": "13-Aug-2026",
+    "nav": 128.7661,
+    "date": "14-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "HDFC Gold ETF - Growth Option",
-    "nav": 129.5455,
-    "date": "13-Aug-2026",
+    "nav": 129.0206,
+    "date": "14-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "ICICI Prudential Gold ETF",
-    "nav": 129.846,
-    "date": "13-Aug-2026",
+    "nav": 129.3221,
+    "date": "14-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "KOTAK GOLD ETF",
-    "nav": 126.563,
-    "date": "13-Aug-2026",
+    "nav": 126.05,
+    "date": "14-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Axis Gold ETF",
-    "nav": 126.3362,
-    "date": "13-Aug-2026",
+    "nav": 125.8262,
+    "date": "14-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Mirae Asset Gold ETF",
-    "nav": 147.3947,
-    "date": "13-Aug-2026",
+    "nav": 146.8026,
+    "date": "14-Aug-2026",
     "metal": "gold"
    }
   ],
   "silver": [
    {
     "name": "Nippon India Silver ETF",
-    "nav": 222.029,
-    "date": "13-Aug-2026",
+    "nav": 221.3435,
+    "date": "14-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "SBI Silver ETF",
-    "nav": 227.4639,
-    "date": "13-Aug-2026",
+    "nav": 226.766,
+    "date": "14-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "HDFC Silver ETF - Growth Option",
-    "nav": 222.0453,
-    "date": "13-Aug-2026",
+    "nav": 221.3637,
+    "date": "14-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "ICICI PRUDENTIAL SILVER ETF",
-    "nav": 231.7864,
-    "date": "13-Aug-2026",
+    "nav": 231.0683,
+    "date": "14-Aug-2026",
     "metal": "silver"
    }
   ]
