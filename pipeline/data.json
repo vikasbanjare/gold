@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-18T03:29:18.072Z",
+ "generated_at": "2026-08-18T13:27:30.659Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,23 +24,23 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 135324,
-   "landed_inr_est": 147747,
-   "intl_inr_month_ago": 124692,
-   "spot_usd_ozt": 4398.399902,
-   "spot_at": "2026-08-18T03:29:04Z",
+   "intl_inr": 135081,
+   "landed_inr_est": 147481,
+   "intl_inr_month_ago": 124408,
+   "spot_usd_ozt": 4390.5,
+   "spot_at": "2026-08-18T13:27:05Z",
    "stats": {
-    "sma50": 127674,
-    "sma200": 133787,
-    "rsi14": 65.7,
+    "sma50": 127708,
+    "sma200": 133898,
+    "rsi14": 64.5,
     "high52w": 156021,
     "low52w": 93508,
-    "fx_change_20d": -0.0093,
-    "off_high_pct": -13.3
+    "fx_change_20d": -0.0085,
+    "off_high_pct": -13.4
    },
    "components": {
-    "valuation": 47,
-    "drawdown": 88,
+    "valuation": 48,
+    "drawdown": 89,
     "trend": 55,
     "rsi": 40,
     "fx": 40
@@ -48,10 +48,6 @@
    "score": 58,
    "band": 3,
    "history": [
-    {
-     "d": "2026-02-10",
-     "v": 146112
-    },
     {
      "d": "2026-02-11",
      "v": 147709
@@ -565,42 +561,42 @@
      "v": 134356
     },
     {
+     "d": "2026-08-17",
+     "v": 135504
+    },
+    {
      "d": "2026-08-18",
-     "v": 136850
+     "v": 136774
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 201260,
-   "landed_inr_est": 219736,
-   "intl_inr_month_ago": 174135,
-   "spot_usd_ozt": 65.415001,
-   "spot_at": "2026-08-18T03:29:04Z",
+   "intl_inr": 199986,
+   "landed_inr_est": 218345,
+   "intl_inr_month_ago": 176212,
+   "spot_usd_ozt": 65.000999,
+   "spot_at": "2026-08-18T13:27:04Z",
    "stats": {
-    "sma50": 189279,
-    "sma200": 210739,
-    "rsi14": 62.2,
+    "sma50": 189063,
+    "sma200": 211070,
+    "rsi14": 59.6,
     "high52w": 332874,
     "low52w": 105487,
-    "fx_change_20d": -0.0093,
-    "off_high_pct": -39.5
+    "fx_change_20d": -0.0085,
+    "off_high_pct": -39.9
    },
    "components": {
-    "valuation": 61,
+    "valuation": 63,
     "drawdown": 95,
     "trend": 40,
-    "rsi": 40,
+    "rsi": 50,
     "fx": 40
    },
-   "score": 61,
+   "score": 63,
    "band": 3,
    "history": [
-    {
-     "d": "2026-02-10",
-     "v": 234238
-    },
     {
      "d": "2026-02-11",
      "v": 243931
@@ -1114,8 +1110,12 @@
      "v": 199332
     },
     {
+     "d": "2026-08-17",
+     "v": 202808
+    },
+    {
      "d": "2026-08-18",
-     "v": 200736
+     "v": 200177
     }
    ]
   }
