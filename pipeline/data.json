@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-18T13:27:30.659Z",
+ "generated_at": "2026-08-19T03:31:50.504Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,39 +19,35 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 95.7,
+ "usd_inr": 95.77,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 135081,
-   "landed_inr_est": 147481,
-   "intl_inr_month_ago": 124408,
-   "spot_usd_ozt": 4390.5,
-   "spot_at": "2026-08-18T13:27:05Z",
+   "intl_inr": 134225,
+   "landed_inr_est": 146547,
+   "intl_inr_month_ago": 126100,
+   "spot_usd_ozt": 4359.399902,
+   "spot_at": "2026-08-19T03:31:36Z",
    "stats": {
-    "sma50": 127708,
-    "sma200": 133898,
-    "rsi14": 64.5,
+    "sma50": 127718,
+    "sma200": 133999,
+    "rsi14": 61,
     "high52w": 156021,
     "low52w": 93508,
-    "fx_change_20d": -0.0085,
-    "off_high_pct": -13.4
+    "fx_change_20d": -0.0064,
+    "off_high_pct": -14
    },
    "components": {
-    "valuation": 48,
-    "drawdown": 89,
+    "valuation": 50,
+    "drawdown": 91,
     "trend": 55,
     "rsi": 40,
     "fx": 40
    },
-   "score": 58,
+   "score": 59,
    "band": 3,
    "history": [
-    {
-     "d": "2026-02-11",
-     "v": 147709
-    },
     {
      "d": "2026-02-12",
      "v": 143635
@@ -562,45 +558,45 @@
     },
     {
      "d": "2026-08-17",
-     "v": 135504
+     "v": 135920
     },
     {
      "d": "2026-08-18",
-     "v": 136774
+     "v": 134326
+    },
+    {
+     "d": "2026-08-19",
+     "v": 135624
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 199986,
-   "landed_inr_est": 218345,
-   "intl_inr_month_ago": 176212,
-   "spot_usd_ozt": 65.000999,
-   "spot_at": "2026-08-18T13:27:04Z",
+   "intl_inr": 194798,
+   "landed_inr_est": 212680,
+   "intl_inr_month_ago": 182237,
+   "spot_usd_ozt": 63.266998,
+   "spot_at": "2026-08-19T03:31:36Z",
    "stats": {
-    "sma50": 189063,
-    "sma200": 211070,
-    "rsi14": 59.6,
+    "sma50": 188696,
+    "sma200": 211343,
+    "rsi14": 53.5,
     "high52w": 332874,
     "low52w": 105487,
-    "fx_change_20d": -0.0085,
-    "off_high_pct": -39.9
+    "fx_change_20d": -0.0064,
+    "off_high_pct": -41.5
    },
    "components": {
-    "valuation": 63,
+    "valuation": 70,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
     "fx": 40
    },
-   "score": 63,
-   "band": 3,
+   "score": 65,
+   "band": 2,
    "history": [
-    {
-     "d": "2026-02-11",
-     "v": 243931
-    },
     {
      "d": "2026-02-12",
      "v": 220384
@@ -1111,11 +1107,15 @@
     },
     {
      "d": "2026-08-17",
-     "v": 202808
+     "v": 203430
     },
     {
      "d": "2026-08-18",
-     "v": 200177
+     "v": 196723
+    },
+    {
+     "d": "2026-08-19",
+     "v": 193865
     }
    ]
   }
@@ -1124,64 +1124,64 @@
   "gold": [
    {
     "name": "SBI Gold ETF",
-    "nav": 130.3142,
-    "date": "17-Aug-2026",
+    "nav": 130.3269,
+    "date": "18-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "HDFC Gold ETF - Growth Option",
-    "nav": 130.5762,
-    "date": "17-Aug-2026",
+    "nav": 130.5892,
+    "date": "18-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "ICICI Prudential Gold ETF",
-    "nav": 130.8763,
-    "date": "17-Aug-2026",
+    "nav": 130.8894,
+    "date": "18-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "KOTAK GOLD ETF",
-    "nav": 127.5712,
-    "date": "17-Aug-2026",
+    "nav": 127.5841,
+    "date": "18-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Axis Gold ETF",
-    "nav": 127.3367,
-    "date": "17-Aug-2026",
+    "nav": 127.3493,
+    "date": "18-Aug-2026",
     "metal": "gold"
    },
    {
     "name": "Mirae Asset Gold ETF",
-    "nav": 148.5622,
-    "date": "17-Aug-2026",
+    "nav": 148.5778,
+    "date": "18-Aug-2026",
     "metal": "gold"
    }
   ],
   "silver": [
    {
     "name": "Nippon India Silver ETF",
-    "nav": 223.5397,
-    "date": "17-Aug-2026",
+    "nav": 221.5218,
+    "date": "18-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "SBI Silver ETF",
-    "nav": 229.008,
-    "date": "17-Aug-2026",
+    "nav": 226.9519,
+    "date": "18-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "HDFC Silver ETF - Growth Option",
-    "nav": 223.5464,
-    "date": "17-Aug-2026",
+    "nav": 221.5403,
+    "date": "18-Aug-2026",
     "metal": "silver"
    },
    {
     "name": "ICICI PRUDENTIAL SILVER ETF",
-    "nav": 233.3751,
-    "date": "17-Aug-2026",
+    "nav": 231.259,
+    "date": "18-Aug-2026",
     "metal": "silver"
    }
   ]
