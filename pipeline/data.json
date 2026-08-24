@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T03:39:47.584Z",
+ "generated_at": "2026-08-24T13:34:45.094Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,28 +24,28 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 143240,
-   "landed_inr_est": 156390,
+   "intl_inr": 144013,
+   "landed_inr_est": 157234,
    "intl_inr_month_ago": 126692,
-   "spot_usd_ozt": 4650.899902,
-   "spot_at": "2026-08-24T03:39:15Z",
+   "spot_usd_ozt": 4676,
+   "spot_at": "2026-08-24T13:34:16Z",
    "stats": {
-    "sma50": 128630,
-    "sma200": 134440,
-    "rsi14": 75,
+    "sma50": 128646,
+    "sma200": 134444,
+    "rsi14": 75.9,
     "high52w": 156021,
     "low52w": 94704,
-    "fx_change_20d": -0.0095,
-    "off_high_pct": -8.2
+    "fx_change_20d": -0.0086,
+    "off_high_pct": -7.7
    },
    "components": {
-    "valuation": 34,
-    "drawdown": 68,
+    "valuation": 32,
+    "drawdown": 66,
     "trend": 55,
     "rsi": 25,
     "fx": 40
    },
-   "score": 46,
+   "score": 45,
    "band": 3,
    "history": [
     {
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-08-24",
-     "v": 144554
+     "v": 145492
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 213516,
-   "landed_inr_est": 233117,
+   "intl_inr": 214400,
+   "landed_inr_est": 234082,
    "intl_inr_month_ago": 182694,
-   "spot_usd_ozt": 69.327003,
-   "spot_at": "2026-08-24T03:39:44Z",
+   "spot_usd_ozt": 69.613998,
+   "spot_at": "2026-08-24T13:34:15Z",
    "stats": {
-    "sma50": 189681,
-    "sma200": 212525,
-    "rsi14": 67.6,
+    "sma50": 189699,
+    "sma200": 212529,
+    "rsi14": 68.4,
     "high52w": 332874,
     "low52w": 108941,
-    "fx_change_20d": -0.0095,
-    "off_high_pct": -35.9
+    "fx_change_20d": -0.0086,
+    "off_high_pct": -35.6
    },
    "components": {
-    "valuation": 49,
+    "valuation": 48,
     "drawdown": 95,
     "trend": 55,
     "rsi": 40,
     "fx": 40
    },
-   "score": 60,
+   "score": 59,
    "band": 3,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-08-24",
-     "v": 212067
+     "v": 213810
     }
    ]
   }
