@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T13:34:45.094Z",
+ "generated_at": "2026-08-25T03:33:35.380Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,39 +19,35 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 95.79,
+ "usd_inr": 95.8,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 144013,
-   "landed_inr_est": 157234,
-   "intl_inr_month_ago": 126692,
-   "spot_usd_ozt": 4676,
-   "spot_at": "2026-08-24T13:34:16Z",
+   "intl_inr": 142918,
+   "landed_inr_est": 156038,
+   "intl_inr_month_ago": 125462,
+   "spot_usd_ozt": 4640.200195,
+   "spot_at": "2026-08-25T03:33:17Z",
    "stats": {
-    "sma50": 128646,
-    "sma200": 134444,
-    "rsi14": 75.9,
+    "sma50": 128886,
+    "sma200": 134585,
+    "rsi14": 74.7,
     "high52w": 156021,
-    "low52w": 94704,
-    "fx_change_20d": -0.0086,
-    "off_high_pct": -7.7
+    "low52w": 95029,
+    "fx_change_20d": -0.0005,
+    "off_high_pct": -8.4
    },
    "components": {
-    "valuation": 32,
-    "drawdown": 66,
+    "valuation": 35,
+    "drawdown": 69,
     "trend": 55,
     "rsi": 25,
-    "fx": 40
+    "fx": 50
    },
-   "score": 45,
+   "score": 48,
    "band": 3,
    "history": [
-    {
-     "d": "2026-02-18",
-     "v": 145292
-    },
     {
      "d": "2026-02-19",
      "v": 145250
@@ -566,41 +562,41 @@
     },
     {
      "d": "2026-08-24",
-     "v": 145492
+     "v": 142897
+    },
+    {
+     "d": "2026-08-25",
+     "v": 144387
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 214400,
-   "landed_inr_est": 234082,
-   "intl_inr_month_ago": 182694,
-   "spot_usd_ozt": 69.613998,
-   "spot_at": "2026-08-24T13:34:15Z",
+   "intl_inr": 209785,
+   "landed_inr_est": 229044,
+   "intl_inr_month_ago": 180048,
+   "spot_usd_ozt": 68.112,
+   "spot_at": "2026-08-25T03:33:16Z",
    "stats": {
-    "sma50": 189699,
-    "sma200": 212529,
-    "rsi14": 68.4,
+    "sma50": 189649,
+    "sma200": 212878,
+    "rsi14": 63,
     "high52w": 332874,
     "low52w": 108941,
-    "fx_change_20d": -0.0086,
-    "off_high_pct": -35.6
+    "fx_change_20d": -0.0005,
+    "off_high_pct": -37
    },
    "components": {
-    "valuation": 48,
+    "valuation": 54,
     "drawdown": 95,
-    "trend": 55,
+    "trend": 40,
     "rsi": 40,
-    "fx": 40
+    "fx": 50
    },
-   "score": 59,
+   "score": 60,
    "band": 3,
    "history": [
-    {
-     "d": "2026-02-18",
-     "v": 225838
-    },
     {
      "d": "2026-02-19",
      "v": 226418
@@ -1115,7 +1111,11 @@
     },
     {
      "d": "2026-08-24",
-     "v": 213810
+     "v": 211048
+    },
+    {
+     "d": "2026-08-25",
+     "v": 208817
     }
    ]
   }
