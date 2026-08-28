@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-28T14:36:15.943Z",
+ "generated_at": "2026-08-28T22:37:23.997Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,28 +24,28 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 140441,
-   "landed_inr_est": 153333,
+   "intl_inr": 136962,
+   "landed_inr_est": 149535,
    "intl_inr_month_ago": 126133,
-   "spot_usd_ozt": 4569.600098,
-   "spot_at": "2026-08-28T14:35:57Z",
+   "spot_usd_ozt": 4456.399902,
+   "spot_at": "2026-08-28T22:36:59Z",
    "stats": {
-    "sma50": 129338,
-    "sma200": 134960,
-    "rsi14": 63.9,
+    "sma50": 129269,
+    "sma200": 134943,
+    "rsi14": 55,
     "high52w": 156021,
     "low52w": 96644,
-    "fx_change_20d": -0.0033,
-    "off_high_pct": -10
+    "fx_change_20d": -0.0004,
+    "off_high_pct": -12.2
    },
    "components": {
-    "valuation": 40,
-    "drawdown": 75,
+    "valuation": 46,
+    "drawdown": 84,
     "trend": 55,
-    "rsi": 40,
+    "rsi": 50,
     "fx": 50
    },
-   "score": 53,
+   "score": 58,
    "band": 3,
    "history": [
     {
@@ -562,39 +562,39 @@
     },
     {
      "d": "2026-08-27",
-     "v": 141433
+     "v": 141492
     },
     {
      "d": "2026-08-28",
-     "v": 141086
+     "v": 138091
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 213507,
-   "landed_inr_est": 233107,
+   "intl_inr": 204389,
+   "landed_inr_est": 223152,
    "intl_inr_month_ago": 180935,
-   "spot_usd_ozt": 69.470001,
-   "spot_at": "2026-08-28T14:35:57Z",
+   "spot_usd_ozt": 66.502998,
+   "spot_at": "2026-08-28T22:36:58Z",
    "stats": {
-    "sma50": 189437,
-    "sma200": 213957,
-    "rsi14": 64.4,
+    "sma50": 189256,
+    "sma200": 213912,
+    "rsi14": 54.8,
     "high52w": 332874,
     "low52w": 110364,
-    "fx_change_20d": -0.0033,
-    "off_high_pct": -35.9
+    "fx_change_20d": -0.0004,
+    "off_high_pct": -38.6
    },
    "components": {
-    "valuation": 51,
+    "valuation": 61,
     "drawdown": 95,
     "trend": 40,
-    "rsi": 40,
+    "rsi": 50,
     "fx": 50
    },
-   "score": 58,
+   "score": 63,
    "band": 3,
    "history": [
     {
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-08-27",
-     "v": 213019
+     "v": 213108
     },
     {
      "d": "2026-08-28",
-     "v": 213174
+     "v": 205691
     }
    ]
   }
