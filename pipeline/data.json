@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T08:55:10.355Z",
+ "generated_at": "2026-08-31T19:13:55.943Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,23 +24,23 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 136328,
-   "landed_inr_est": 148843,
+   "intl_inr": 136255,
+   "landed_inr_est": 148763,
    "intl_inr_month_ago": 124564,
-   "spot_usd_ozt": 4436.299805,
-   "spot_at": "2026-08-31T08:54:37Z",
+   "spot_usd_ozt": 4433.899902,
+   "spot_at": "2026-08-31T19:13:38Z",
    "stats": {
-    "sma50": 129443,
+    "sma50": 129442,
     "sma200": 135041,
-    "rsi14": 53.5,
+    "rsi14": 53.3,
     "high52w": 156021,
     "low52w": 97824,
-    "fx_change_20d": -0.0018,
-    "off_high_pct": -12.6
+    "fx_change_20d": -0.0026,
+    "off_high_pct": -12.7
    },
    "components": {
     "valuation": 48,
-    "drawdown": 85,
+    "drawdown": 86,
     "trend": 55,
     "rsi": 50,
     "fx": 50
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-08-31",
-     "v": 137315
+     "v": 137049
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 206027,
-   "landed_inr_est": 224941,
+   "intl_inr": 203686,
+   "landed_inr_est": 222384,
    "intl_inr_month_ago": 177169,
-   "spot_usd_ozt": 67.043999,
-   "spot_at": "2026-08-31T08:55:07Z",
+   "spot_usd_ozt": 66.281998,
+   "spot_at": "2026-08-31T19:13:37Z",
    "stats": {
-    "sma50": 189383,
-    "sma200": 214226,
-    "rsi14": 56.3,
+    "sma50": 189336,
+    "sma200": 214214,
+    "rsi14": 54,
     "high52w": 332874,
     "low52w": 113209,
-    "fx_change_20d": -0.0018,
-    "off_high_pct": -38.1
+    "fx_change_20d": -0.0026,
+    "off_high_pct": -38.8
    },
    "components": {
-    "valuation": 60,
+    "valuation": 62,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
     "fx": 50
    },
-   "score": 63,
+   "score": 64,
    "band": 3,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-08-31",
-     "v": 206926
+     "v": 204462
     }
    ]
   }
