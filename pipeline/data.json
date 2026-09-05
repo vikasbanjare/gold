@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04T16:35:12.817Z",
+ "generated_at": "2026-09-05T07:07:40.115Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,28 +19,28 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 94.54,
+ "usd_inr": 94.52,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 134922,
-   "landed_inr_est": 147308,
+   "intl_inr": 134653,
+   "landed_inr_est": 147014,
    "intl_inr_month_ago": 129990,
-   "spot_usd_ozt": 4438.899902,
-   "spot_at": "2026-09-04T16:34:57Z",
+   "spot_usd_ozt": 4431.100098,
+   "spot_at": "2026-09-05T07:07:29Z",
    "stats": {
-    "sma50": 130218,
-    "sma200": 135363,
-    "rsi14": 50.7,
+    "sma50": 130213,
+    "sma200": 135362,
+    "rsi14": 50.1,
     "high52w": 156021,
     "low52w": 102451,
-    "fx_change_20d": -0.0088,
-    "off_high_pct": -13.5
+    "fx_change_20d": -0.0076,
+    "off_high_pct": -13.7
    },
    "components": {
     "valuation": 51,
-    "drawdown": 89,
+    "drawdown": 90,
     "trend": 40,
     "rsi": 50,
     "fx": 40
@@ -562,30 +562,30 @@
     },
     {
      "d": "2026-09-03",
-     "v": 136451
+     "v": 136462
     },
     {
      "d": "2026-09-04",
-     "v": 136247
+     "v": 134581
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 201464,
-   "landed_inr_est": 219959,
+   "intl_inr": 201598,
+   "landed_inr_est": 220104,
    "intl_inr_month_ago": 188271,
-   "spot_usd_ozt": 66.280998,
-   "spot_at": "2026-09-04T16:34:56Z",
+   "spot_usd_ozt": 66.341003,
+   "spot_at": "2026-09-05T07:07:29Z",
    "stats": {
-    "sma50": 190435,
-    "sma200": 215244,
-    "rsi14": 51.9,
+    "sma50": 190438,
+    "sma200": 215245,
+    "rsi14": 52,
     "high52w": 332874,
     "low52w": 116447,
-    "fx_change_20d": -0.0088,
-    "off_high_pct": -39.5
+    "fx_change_20d": -0.0076,
+    "off_high_pct": -39.4
    },
    "components": {
     "valuation": 66,
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-09-03",
-     "v": 203454
+     "v": 203469
     },
     {
      "d": "2026-09-04",
-     "v": 202688
+     "v": 200656
     }
    ]
   }
