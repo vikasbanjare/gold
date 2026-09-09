@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T07:34:37.151Z",
+ "generated_at": "2026-09-09T16:53:10.769Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -28,14 +28,14 @@
    "landed_inr_est": 146738,
    "intl_inr_month_ago": 133780,
    "spot_usd_ozt": 4407.600098,
-   "spot_at": "2026-09-09T07:34:21Z",
+   "spot_at": "2026-09-09T16:52:52Z",
    "stats": {
     "sma50": 130641,
     "sma200": 135542,
     "rsi14": 49.8,
     "high52w": 156021,
     "low52w": 103150,
-    "fx_change_20d": -0.0029,
+    "fx_change_20d": -0.003,
     "off_high_pct": -13.9
    },
    "components": {
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-09-09",
-     "v": 136034
+     "v": 136059
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 204436,
-   "landed_inr_est": 223203,
+   "intl_inr": 206805,
+   "landed_inr_est": 225790,
    "intl_inr_month_ago": 199685,
-   "spot_usd_ozt": 67.043999,
-   "spot_at": "2026-09-09T07:34:21Z",
+   "spot_usd_ozt": 67.820999,
+   "spot_at": "2026-09-09T16:52:52Z",
    "stats": {
-    "sma50": 191396,
-    "sma200": 215828,
-    "rsi14": 54.6,
+    "sma50": 191443,
+    "sma200": 215840,
+    "rsi14": 56.6,
     "high52w": 332874,
     "low52w": 116447,
-    "fx_change_20d": -0.0029,
-    "off_high_pct": -38.6
+    "fx_change_20d": -0.003,
+    "off_high_pct": -37.9
    },
    "components": {
-    "valuation": 63,
+    "valuation": 60,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
     "fx": 50
    },
-   "score": 64,
+   "score": 63,
    "band": 3,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-09-09",
-     "v": 206200
+     "v": 208559
     }
    ]
   }
