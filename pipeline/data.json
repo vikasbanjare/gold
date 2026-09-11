@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T07:29:17.515Z",
+ "generated_at": "2026-09-11T16:44:54.581Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,28 +24,28 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 133563,
-   "landed_inr_est": 145824,
+   "intl_inr": 134017,
+   "landed_inr_est": 146320,
    "intl_inr_month_ago": 135150,
-   "spot_usd_ozt": 4349.399902,
-   "spot_at": "2026-09-11T07:28:56Z",
+   "spot_usd_ozt": 4364.200195,
+   "spot_at": "2026-09-11T16:44:27Z",
    "stats": {
-    "sma50": 131053,
-    "sma200": 135724,
-    "rsi14": 47.9,
+    "sma50": 131062,
+    "sma200": 135726,
+    "rsi14": 49,
     "high52w": 156021,
     "low52w": 103210,
-    "fx_change_20d": 0.003,
-    "off_high_pct": -14.4
+    "fx_change_20d": 0.0015,
+    "off_high_pct": -14.1
    },
    "components": {
-    "valuation": 54,
-    "drawdown": 93,
+    "valuation": 53,
+    "drawdown": 91,
     "trend": 40,
     "rsi": 50,
     "fx": 50
    },
-   "score": 60,
+   "score": 59,
    "band": 3,
    "history": [
     {
@@ -566,29 +566,29 @@
     },
     {
      "d": "2026-09-11",
-     "v": 135135
+     "v": 135366
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 196755,
-   "landed_inr_est": 214817,
+   "intl_inr": 198219,
+   "landed_inr_est": 216416,
    "intl_inr_month_ago": 200952,
-   "spot_usd_ozt": 64.071999,
-   "spot_at": "2026-09-11T07:28:56Z",
+   "spot_usd_ozt": 64.549004,
+   "spot_at": "2026-09-11T16:44:27Z",
    "stats": {
-    "sma50": 192026,
-    "sma200": 216389,
-    "rsi14": 47.3,
+    "sma50": 192056,
+    "sma200": 216396,
+    "rsi14": 48.6,
     "high52w": 332874,
     "low52w": 118278,
-    "fx_change_20d": 0.003,
-    "off_high_pct": -40.9
+    "fx_change_20d": 0.0015,
+    "off_high_pct": -40.5
    },
    "components": {
-    "valuation": 73,
+    "valuation": 71,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-09-11",
-     "v": 198373
+     "v": 199736
     }
    ]
   }
