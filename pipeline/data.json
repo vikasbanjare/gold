@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T16:44:54.581Z",
+ "generated_at": "2026-09-12T07:21:22.041Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,33 +19,33 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 95.51,
+ "usd_inr": 95.6,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 134017,
-   "landed_inr_est": 146320,
+   "intl_inr": 133695,
+   "landed_inr_est": 145969,
    "intl_inr_month_ago": 135150,
-   "spot_usd_ozt": 4364.200195,
-   "spot_at": "2026-09-11T16:44:27Z",
+   "spot_usd_ozt": 4349.700195,
+   "spot_at": "2026-09-12T07:21:00Z",
    "stats": {
-    "sma50": 131062,
-    "sma200": 135726,
-    "rsi14": 49,
+    "sma50": 131072,
+    "sma200": 135729,
+    "rsi14": 48.1,
     "high52w": 156021,
     "low52w": 103210,
-    "fx_change_20d": 0.0015,
-    "off_high_pct": -14.1
+    "fx_change_20d": 0.0009,
+    "off_high_pct": -14.3
    },
    "components": {
-    "valuation": 53,
-    "drawdown": 91,
+    "valuation": 54,
+    "drawdown": 92,
     "trend": 40,
     "rsi": 50,
     "fx": 50
    },
-   "score": 59,
+   "score": 60,
    "band": 3,
    "history": [
     {
@@ -562,30 +562,30 @@
     },
     {
      "d": "2026-09-10",
-     "v": 133463
+     "v": 134280
     },
     {
      "d": "2026-09-11",
-     "v": 135366
+     "v": 134333
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 198219,
-   "landed_inr_est": 216416,
+   "intl_inr": 198627,
+   "landed_inr_est": 216861,
    "intl_inr_month_ago": 200952,
-   "spot_usd_ozt": 64.549004,
-   "spot_at": "2026-09-11T16:44:27Z",
+   "spot_usd_ozt": 64.622002,
+   "spot_at": "2026-09-12T07:21:00Z",
    "stats": {
-    "sma50": 192056,
-    "sma200": 216396,
-    "rsi14": 48.6,
+    "sma50": 192088,
+    "sma200": 216404,
+    "rsi14": 48.8,
     "high52w": 332874,
     "low52w": 118278,
-    "fx_change_20d": 0.0015,
-    "off_high_pct": -40.5
+    "fx_change_20d": 0.0009,
+    "off_high_pct": -40.3
    },
    "components": {
     "valuation": 71,
@@ -594,7 +594,7 @@
     "rsi": 50,
     "fx": 50
    },
-   "score": 67,
+   "score": 66,
    "band": 2,
    "history": [
     {
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-09-10",
-     "v": 196575
+     "v": 197779
     },
     {
      "d": "2026-09-11",
-     "v": 199736
+     "v": 198610
     }
    ]
   }
