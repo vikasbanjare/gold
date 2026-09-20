@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T07:55:47.162Z",
+ "generated_at": "2026-09-20T16:28:08.951Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -28,14 +28,14 @@
    "landed_inr_est": 147472,
    "intl_inr_month_ago": 139553,
    "spot_usd_ozt": 4379,
-   "spot_at": "2026-09-20T07:55:18Z",
+   "spot_at": "2026-09-20T16:27:49Z",
    "stats": {
     "sma50": 132924,
     "sma200": 136749,
     "rsi14": 48.5,
     "high52w": 156079,
     "low52w": 105080,
-    "fx_change_20d": 0.0019,
+    "fx_change_20d": 0.0017,
     "off_high_pct": -13.5
    },
    "components": {
@@ -577,14 +577,14 @@
    "landed_inr_est": 223539,
    "intl_inr_month_ago": 201821,
    "spot_usd_ozt": 66.376999,
-   "spot_at": "2026-09-20T07:55:18Z",
+   "spot_at": "2026-09-20T16:27:48Z",
    "stats": {
     "sma50": 193441,
     "sma200": 217521,
     "rsi14": 55.1,
     "high52w": 332874,
     "low52w": 118278,
-    "fx_change_20d": 0.0019,
+    "fx_change_20d": 0.0017,
     "off_high_pct": -38.5
    },
    "components": {
