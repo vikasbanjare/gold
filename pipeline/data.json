@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T07:58:50.921Z",
+ "generated_at": "2026-09-23T17:26:53.052Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,29 +24,29 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 132936,
-   "landed_inr_est": 145139,
+   "intl_inr": 131721,
+   "landed_inr_est": 143813,
    "intl_inr_month_ago": 144578,
-   "spot_usd_ozt": 4322.899902,
-   "spot_at": "2026-09-23T07:58:41Z",
+   "spot_usd_ozt": 4283.399902,
+   "spot_at": "2026-09-23T17:26:42Z",
    "stats": {
-    "sma50": 133472,
-    "sma200": 136933,
-    "rsi14": 42.8,
+    "sma50": 133447,
+    "sma200": 136927,
+    "rsi14": 40.2,
     "high52w": 156079,
     "low52w": 107553,
-    "fx_change_20d": 0.0232,
-    "off_high_pct": -14.8
+    "fx_change_20d": 0.0233,
+    "off_high_pct": -15.6
    },
    "components": {
-    "valuation": 57,
-    "drawdown": 94,
+    "valuation": 60,
+    "drawdown": 95,
     "trend": 40,
     "rsi": 65,
     "fx": 60
    },
-   "score": 64,
-   "band": 3,
+   "score": 65,
+   "band": 2,
    "history": [
     {
      "d": "2026-03-19",
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-09-23",
-     "v": 134121
+     "v": 132791
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 201751,
-   "landed_inr_est": 220272,
+   "intl_inr": 198639,
+   "landed_inr_est": 216874,
    "intl_inr_month_ago": 210940,
-   "spot_usd_ozt": 65.607002,
-   "spot_at": "2026-09-23T07:58:40Z",
+   "spot_usd_ozt": 64.595001,
+   "spot_at": "2026-09-23T17:26:41Z",
    "stats": {
-    "sma50": 194708,
-    "sma200": 218061,
-    "rsi14": 51.7,
+    "sma50": 194646,
+    "sma200": 218046,
+    "rsi14": 48.3,
     "high52w": 332874,
     "low52w": 124953,
-    "fx_change_20d": 0.0232,
-    "off_high_pct": -39.4
+    "fx_change_20d": 0.0233,
+    "off_high_pct": -40.3
    },
    "components": {
-    "valuation": 69,
+    "valuation": 72,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
     "fx": 60
    },
-   "score": 67,
+   "score": 68,
    "band": 2,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-09-23",
-     "v": 203159
+     "v": 199687
     }
    ]
   }
