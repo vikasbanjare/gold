@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T07:49:41.932Z",
+ "generated_at": "2026-09-24T17:32:08.495Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,22 +24,22 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 131912,
-   "landed_inr_est": 144022,
+   "intl_inr": 131376,
+   "landed_inr_est": 143437,
    "intl_inr_month_ago": 141191,
-   "spot_usd_ozt": 4282.399902,
-   "spot_at": "2026-09-24T07:49:13Z",
+   "spot_usd_ozt": 4265,
+   "spot_at": "2026-09-24T17:31:56Z",
    "stats": {
-    "sma50": 133593,
-    "sma200": 136979,
-    "rsi14": 40.4,
+    "sma50": 133583,
+    "sma200": 136977,
+    "rsi14": 39.3,
     "high52w": 156079,
     "low52w": 107632,
-    "fx_change_20d": 0.0048,
-    "off_high_pct": -15.5
+    "fx_change_20d": 0.0057,
+    "off_high_pct": -15.8
    },
    "components": {
-    "valuation": 59,
+    "valuation": 60,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-09-24",
-     "v": 133181
+     "v": 132668
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 198139,
-   "landed_inr_est": 216329,
+   "intl_inr": 196106,
+   "landed_inr_est": 214109,
    "intl_inr_month_ago": 206428,
-   "spot_usd_ozt": 64.323997,
-   "spot_at": "2026-09-24T07:49:13Z",
+   "spot_usd_ozt": 63.664001,
+   "spot_at": "2026-09-24T17:31:55Z",
    "stats": {
-    "sma50": 195053,
-    "sma200": 218190,
-    "rsi14": 47.9,
+    "sma50": 195012,
+    "sma200": 218180,
+    "rsi14": 45.8,
     "high52w": 332874,
     "low52w": 126179,
-    "fx_change_20d": 0.0048,
-    "off_high_pct": -40.5
+    "fx_change_20d": 0.0057,
+    "off_high_pct": -41.1
    },
    "components": {
-    "valuation": 73,
+    "valuation": 75,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
     "fx": 60
    },
-   "score": 68,
+   "score": 69,
    "band": 2,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-09-24",
-     "v": 199488
+     "v": 197596
     }
    ]
   }
