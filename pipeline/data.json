@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T09:01:44.766Z",
+ "generated_at": "2026-09-30T18:07:06.372Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,22 +24,22 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 129507,
-   "landed_inr_est": 141396,
+   "intl_inr": 128186,
+   "landed_inr_est": 139953,
    "intl_inr_month_ago": 137044,
-   "spot_usd_ozt": 4193.200195,
-   "spot_at": "2026-09-30T09:01:17Z",
+   "spot_usd_ozt": 4150.399902,
+   "spot_at": "2026-09-30T18:06:48Z",
    "stats": {
-    "sma50": 134033,
-    "sma200": 137131,
-    "rsi14": 37.2,
+    "sma50": 134007,
+    "sma200": 137125,
+    "rsi14": 33.9,
     "high52w": 156079,
     "low52w": 110630,
-    "fx_change_20d": 0.0095,
-    "off_high_pct": -17
+    "fx_change_20d": 0.0091,
+    "off_high_pct": -17.9
    },
    "components": {
-    "valuation": 64,
+    "valuation": 66,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-09-30",
-     "v": 130312
+     "v": 128822
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 189011,
-   "landed_inr_est": 206362,
+   "intl_inr": 186077,
+   "landed_inr_est": 203159,
    "intl_inr_month_ago": 202504,
-   "spot_usd_ozt": 61.198002,
-   "spot_at": "2026-09-30T09:01:16Z",
+   "spot_usd_ozt": 60.248001,
+   "spot_at": "2026-09-30T18:06:47Z",
    "stats": {
-    "sma50": 196166,
-    "sma200": 218497,
-    "rsi14": 40.7,
+    "sma50": 196107,
+    "sma200": 218482,
+    "rsi14": 37.5,
     "high52w": 332874,
     "low52w": 132112,
-    "fx_change_20d": 0.0095,
-    "off_high_pct": -43.2
+    "fx_change_20d": 0.0091,
+    "off_high_pct": -44.1
    },
    "components": {
-    "valuation": 84,
+    "valuation": 87,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
     "fx": 60
    },
-   "score": 74,
+   "score": 75,
    "band": 2,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-09-30",
-     "v": 189543
+     "v": 186304
     }
    ]
   }
