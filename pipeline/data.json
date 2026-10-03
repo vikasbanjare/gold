@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T18:01:18.965Z",
+ "generated_at": "2026-10-03T08:34:09.382Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,23 +19,23 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 96.38,
+ "usd_inr": 96.37,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 128222,
-   "landed_inr_est": 139993,
+   "intl_inr": 128332,
+   "landed_inr_est": 140112,
    "intl_inr_month_ago": 134109,
-   "spot_usd_ozt": 4138,
-   "spot_at": "2026-10-02T18:00:57Z",
+   "spot_usd_ozt": 4141.799805,
+   "spot_at": "2026-10-03T08:34:00Z",
    "stats": {
-    "sma50": 134083,
-    "sma200": 137160,
-    "rsi14": 34.6,
+    "sma50": 134093,
+    "sma200": 137162,
+    "rsi14": 35.4,
     "high52w": 156079,
     "low52w": 111126,
-    "fx_change_20d": 0.0191,
+    "fx_change_20d": 0.0198,
     "off_high_pct": -17.8
    },
    "components": {
@@ -562,33 +562,33 @@
     },
     {
      "d": "2026-10-01",
-     "v": 129604
+     "v": 130007
     },
     {
      "d": "2026-10-02",
-     "v": 129024
+     "v": 128769
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 186966,
-   "landed_inr_est": 204130,
+   "intl_inr": 187531,
+   "landed_inr_est": 204746,
    "intl_inr_month_ago": 196619,
-   "spot_usd_ozt": 60.338001,
-   "spot_at": "2026-10-02T18:00:57Z",
+   "spot_usd_ozt": 60.523998,
+   "spot_at": "2026-10-03T08:34:00Z",
    "stats": {
-    "sma50": 196253,
-    "sma200": 218544,
-    "rsi14": 39.2,
+    "sma50": 196276,
+    "sma200": 218549,
+    "rsi14": 39.9,
     "high52w": 332874,
     "low52w": 133666,
-    "fx_change_20d": 0.0191,
-    "off_high_pct": -43.8
+    "fx_change_20d": 0.0198,
+    "off_high_pct": -43.7
    },
    "components": {
-    "valuation": 86,
+    "valuation": 85,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
@@ -1111,11 +1111,11 @@
     },
     {
      "d": "2026-10-01",
-     "v": 187284
+     "v": 187865
     },
     {
      "d": "2026-10-02",
-     "v": 187439
+     "v": 185551
     }
    ]
   }
