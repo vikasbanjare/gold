@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T08:34:09.382Z",
+ "generated_at": "2026-10-03T16:41:59.885Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -28,7 +28,7 @@
    "landed_inr_est": 140112,
    "intl_inr_month_ago": 134109,
    "spot_usd_ozt": 4141.799805,
-   "spot_at": "2026-10-03T08:34:00Z",
+   "spot_at": "2026-10-03T16:41:32Z",
    "stats": {
     "sma50": 134093,
     "sma200": 137162,
@@ -577,7 +577,7 @@
    "landed_inr_est": 204746,
    "intl_inr_month_ago": 196619,
    "spot_usd_ozt": 60.523998,
-   "spot_at": "2026-10-03T08:34:00Z",
+   "spot_at": "2026-10-03T16:41:31Z",
    "stats": {
     "sma50": 196276,
     "sma200": 218549,
