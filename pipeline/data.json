@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T09:37:36.755Z",
+ "generated_at": "2026-10-05T20:44:28.450Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,22 +24,22 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 128983,
-   "landed_inr_est": 140823,
+   "intl_inr": 128338,
+   "landed_inr_est": 140119,
    "intl_inr_month_ago": 137926,
-   "spot_usd_ozt": 4161.600098,
-   "spot_at": "2026-10-05T09:37:07Z",
+   "spot_usd_ozt": 4140.799805,
+   "spot_at": "2026-10-05T20:44:08Z",
    "stats": {
-    "sma50": 134146,
-    "sma200": 137177,
-    "rsi14": 37.1,
+    "sma50": 134133,
+    "sma200": 137174,
+    "rsi14": 35.4,
     "high52w": 156079,
     "low52w": 111498,
-    "fx_change_20d": 0.0195,
-    "off_high_pct": -17.4
+    "fx_change_20d": 0.0191,
+    "off_high_pct": -17.8
    },
    "components": {
-    "valuation": 65,
+    "valuation": 66,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
@@ -566,35 +566,35 @@
     },
     {
      "d": "2026-10-05",
-     "v": 129885
+     "v": 129024
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 191289,
-   "landed_inr_est": 208849,
+   "intl_inr": 189618,
+   "landed_inr_est": 207025,
    "intl_inr_month_ago": 203469,
-   "spot_usd_ozt": 61.719002,
-   "spot_at": "2026-10-05T09:37:06Z",
+   "spot_usd_ozt": 61.18,
+   "spot_at": "2026-10-05T20:44:07Z",
    "stats": {
-    "sma50": 196409,
-    "sma200": 218581,
-    "rsi14": 45.4,
+    "sma50": 196375,
+    "sma200": 218573,
+    "rsi14": 43.5,
     "high52w": 332874,
     "low52w": 133666,
-    "fx_change_20d": 0.0195,
-    "off_high_pct": -42.5
+    "fx_change_20d": 0.0191,
+    "off_high_pct": -43
    },
    "components": {
-    "valuation": 81,
+    "valuation": 83,
     "drawdown": 95,
     "trend": 40,
-    "rsi": 50,
+    "rsi": 65,
     "fx": 60
    },
-   "score": 71,
+   "score": 73,
    "band": 2,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-10-05",
-     "v": 192065
+     "v": 190024
     }
    ]
   }
