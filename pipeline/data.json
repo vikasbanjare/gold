@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T20:15:41.002Z",
+ "generated_at": "2026-11-06T09:55:07.303Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,27 +19,27 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 94.62,
+ "usd_inr": 94.54,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 124982,
-   "landed_inr_est": 136455,
-   "intl_inr_month_ago": 128809,
-   "spot_usd_ozt": 4108.399902,
-   "spot_at": "2026-11-05T20:15:32Z",
+   "intl_inr": 123839,
+   "landed_inr_est": 135207,
+   "intl_inr_month_ago": 129405,
+   "spot_usd_ozt": 4074.399902,
+   "spot_at": "2026-11-06T09:54:34Z",
    "stats": {
-    "sma50": 130164,
-    "sma200": 136589,
-    "rsi14": 47.8,
+    "sma50": 129778,
+    "sma200": 136485,
+    "rsi14": 45.1,
     "high52w": 156079,
-    "low52w": 113631,
-    "fx_change_20d": -0.0237,
-    "off_high_pct": -19.9
+    "low52w": 113909,
+    "fx_change_20d": -0.0297,
+    "off_high_pct": -20.7
    },
    "components": {
-    "valuation": 71,
+    "valuation": 73,
     "drawdown": 95,
     "trend": 40,
     "rsi": 50,
@@ -48,10 +48,6 @@
    "score": 66,
    "band": 2,
    "history": [
-    {
-     "d": "2026-05-04",
-     "v": 138840
-    },
     {
      "d": "2026-05-05",
      "v": 139805
@@ -566,26 +562,30 @@
     },
     {
      "d": "2026-11-05",
-     "v": 125017
+     "v": 124999
+    },
+    {
+     "d": "2026-11-06",
+     "v": 123281
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 159379,
-   "landed_inr_est": 174010,
-   "intl_inr_month_ago": 186334,
-   "spot_usd_ozt": 52.390999,
-   "spot_at": "2026-11-05T20:15:32Z",
+   "intl_inr": 158580,
+   "landed_inr_est": 173137,
+   "intl_inr_month_ago": 183863,
+   "spot_usd_ozt": 52.174,
+   "spot_at": "2026-11-06T09:54:33Z",
    "stats": {
-    "sma50": 185150,
-    "sma200": 212240,
-    "rsi14": 38.4,
+    "sma50": 184046,
+    "sma200": 211618,
+    "rsi14": 37.5,
     "high52w": 332874,
-    "low52w": 136078,
-    "fx_change_20d": -0.0237,
-    "off_high_pct": -52.1
+    "low52w": 136544,
+    "fx_change_20d": -0.0297,
+    "off_high_pct": -52.4
    },
    "components": {
     "valuation": 95,
@@ -597,10 +597,6 @@
    "score": 76,
    "band": 2,
    "history": [
-    {
-     "d": "2026-05-04",
-     "v": 223795
-    },
     {
      "d": "2026-05-05",
      "v": 223725
@@ -1115,7 +1111,11 @@
     },
     {
      "d": "2026-11-05",
-     "v": 159039
+     "v": 158723
+    },
+    {
+     "d": "2026-11-06",
+     "v": 157152
     }
    ]
   }
