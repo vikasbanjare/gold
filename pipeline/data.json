@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T09:52:28.522Z",
+ "generated_at": "2026-11-11T19:51:05.970Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -24,28 +24,28 @@
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 122425,
-   "landed_inr_est": 133664,
+   "intl_inr": 120458,
+   "landed_inr_est": 131517,
    "intl_inr_month_ago": 127974,
-   "spot_usd_ozt": 4052.800049,
-   "spot_at": "2026-11-11T09:51:59Z",
+   "spot_usd_ozt": 3987.699951,
+   "spot_at": "2026-11-11T19:51:00Z",
    "stats": {
-    "sma50": 128938,
-    "sma200": 136097,
-    "rsi14": 42.8,
+    "sma50": 128898,
+    "sma200": 136087,
+    "rsi14": 38.2,
     "high52w": 156079,
     "low52w": 115883,
-    "fx_change_20d": -0.0167,
-    "off_high_pct": -21.6
+    "fx_change_20d": -0.0169,
+    "off_high_pct": -22.8
    },
    "components": {
-    "valuation": 75,
+    "valuation": 79,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
     "fx": 40
    },
-   "score": 69,
+   "score": 70,
    "band": 2,
    "history": [
     {
@@ -566,26 +566,26 @@
     },
     {
      "d": "2026-11-11",
-     "v": 122200
+     "v": 120310
     }
    ]
   },
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 160514,
-   "landed_inr_est": 175249,
+   "intl_inr": 157000,
+   "landed_inr_est": 171413,
    "intl_inr_month_ago": 181243,
-   "spot_usd_ozt": 53.137001,
-   "spot_at": "2026-11-11T09:51:59Z",
+   "spot_usd_ozt": 51.973999,
+   "spot_at": "2026-11-11T19:50:59Z",
    "stats": {
-    "sma50": 181384,
-    "sma200": 209245,
-    "rsi14": 42.8,
+    "sma50": 181314,
+    "sma200": 209228,
+    "rsi14": 38.6,
     "high52w": 332874,
     "low52w": 142949,
-    "fx_change_20d": -0.0167,
-    "off_high_pct": -51.8
+    "fx_change_20d": -0.0169,
+    "off_high_pct": -52.8
    },
    "components": {
     "valuation": 95,
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-11-11",
-     "v": 159423
+     "v": 156151
     }
    ]
   }
