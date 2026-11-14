@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T20:00:21.379Z",
+ "generated_at": "2026-11-14T09:28:42.937Z",
  "sources": {
   "spot": "api.gold-api.com",
   "fx": "open.er-api.com",
@@ -19,33 +19,33 @@
   "rsi": 0.1,
   "fx": 0.1
  },
- "usd_inr": 94.09,
+ "usd_inr": 94.29,
  "assets": {
   "gold": {
    "key": "gold",
    "unit_grams": 10,
-   "intl_inr": 117322,
-   "landed_inr_est": 128092,
+   "intl_inr": 117852,
+   "landed_inr_est": 128671,
    "intl_inr_month_ago": 126731,
-   "spot_usd_ozt": 3878.5,
-   "spot_at": "2026-11-13T19:59:55Z",
+   "spot_usd_ozt": 3887.600098,
+   "spot_at": "2026-11-14T09:28:25Z",
    "stats": {
-    "sma50": 128152,
-    "sma200": 135693,
-    "rsi14": 33.3,
+    "sma50": 128162,
+    "sma200": 135696,
+    "rsi14": 34.9,
     "high52w": 156079,
     "low52w": 115883,
-    "fx_change_20d": -0.0031,
-    "off_high_pct": -24.8
+    "fx_change_20d": -0.0078,
+    "off_high_pct": -24.5
    },
    "components": {
-    "valuation": 84,
+    "valuation": 83,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
-    "fx": 50
+    "fx": 40
    },
-   "score": 73,
+   "score": 71,
    "band": 2,
    "history": [
     {
@@ -573,28 +573,28 @@
   "silver": {
    "key": "silver",
    "unit_grams": 1000,
-   "intl_inr": 147708,
-   "landed_inr_est": 161267,
+   "intl_inr": 147482,
+   "landed_inr_est": 161021,
    "intl_inr_month_ago": 172730,
-   "spot_usd_ozt": 48.830002,
-   "spot_at": "2026-11-13T19:59:55Z",
+   "spot_usd_ozt": 48.650002,
+   "spot_at": "2026-11-14T09:28:24Z",
    "stats": {
-    "sma50": 179270,
-    "sma200": 207365,
-    "rsi14": 31.5,
+    "sma50": 179266,
+    "sma200": 207364,
+    "rsi14": 31.4,
     "high52w": 332874,
     "low52w": 142949,
-    "fx_change_20d": -0.0031,
-    "off_high_pct": -55.6
+    "fx_change_20d": -0.0078,
+    "off_high_pct": -55.7
    },
    "components": {
     "valuation": 95,
     "drawdown": 95,
     "trend": 40,
     "rsi": 65,
-    "fx": 50
+    "fx": 40
    },
-   "score": 77,
+   "score": 76,
    "band": 2,
    "history": [
     {
@@ -1115,7 +1115,7 @@
     },
     {
      "d": "2026-11-13",
-     "v": 147919
+     "v": 148233
     }
    ]
   }
